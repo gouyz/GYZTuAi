@@ -19,10 +19,11 @@ class GYZMainTabBarVC: UITabBarController {
     func setUp(){
         tabBar.tintColor = kNavBarColor
         
-        addViewController(TAHomeVC(), title: "首页", normalImgName: "icon_tab_home")
-        addViewController(TAFavoriteVC(), title: "收藏", normalImgName: "icon_tab_category")
-        addViewController(TAFriendsVC(), title: "朋友", normalImgName: "icon_tab_order")
-        addViewController(TAMineVC(), title: "我的", normalImgName: "icon_tab_mine")
+        addViewController(TAHomeVC(), title: "首页", normalImgName: "icon_tabbar_home")
+        addViewController(TAFavoriteVC(), title: "收藏", normalImgName: "icon_tabbar_favourite")
+        addViewController(TAOthersVC(), title: "", normalImgName: "icon_tabbar_add")
+        addViewController(TAFriendsVC(), title: "朋友", normalImgName: "icon_tabbar_friends")
+        addViewController(TAMineVC(), title: "我的", normalImgName: "icon_tabbar_mine")
         
     }
 
