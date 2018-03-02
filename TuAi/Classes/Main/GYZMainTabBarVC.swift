@@ -17,7 +17,9 @@ class GYZMainTabBarVC: UITabBarController {
     }
     
     func setUp(){
-        tabBar.tintColor = kNavBarColor
+//        tabBar.tintColor = kWhiteColor
+        tabBar.barTintColor = kNavBarColor
+        tabBar.isTranslucent = false
         
         addViewController(TAHomeVC(), title: "首页", normalImgName: "icon_tabbar_home")
         addViewController(TAFavoriteVC(), title: "收藏", normalImgName: "icon_tabbar_favourite")
@@ -37,7 +39,13 @@ class GYZMainTabBarVC: UITabBarController {
         let nav = GYZBaseNavigationVC(rootViewController:childController)
         addChildViewController(nav)
         childController.tabBarItem.title = title
-        childController.tabBarItem.image = UIImage(named: normalImgName)
-        childController.tabBarItem.selectedImage = UIImage(named: normalImgName + "_selected")
+        
+        // 设置 tabbarItem 选中状态的图片(不被系统默认渲染,显示图像原始颜色)
+        childController.tabBarItem.image = UIImage(named: normalImgName)?.withRenderingMode(.alwaysOriginal)
+        childController.tabBarItem.selectedImage = UIImage(named: normalImgName + "_selected")?.withRenderingMode(.alwaysOriginal)
+       
+        // 设置 tabbarItem 选中状态下的文字颜色(不被系统默认渲染,显示文字自定义颜色)
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : kWhiteColor], for: .normal)
+        childController.tabBarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor : UIColor.RGBColor(15, g: 65, b: 148)], for: .selected)
     }
 }

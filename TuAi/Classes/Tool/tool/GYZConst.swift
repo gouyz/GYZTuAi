@@ -106,7 +106,7 @@ let userDefaults = UserDefaults.standard
 /// 通用背景颜色
 let kBackgroundColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0xf2f2f2)
 /// 导航栏背景颜色
-let kNavBarColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x2dae99)
+let kNavBarColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x679df5)
 /// 黑色字体颜色
 let kBlackFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x333333)
 /// 深灰色字体颜色
@@ -115,6 +115,8 @@ let kHeightGaryFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x666666)
 let kGaryFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x999999)
 /// 黄色字体颜色
 let kYellowFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0xfda007)
+/// 蓝色字体颜色
+let kBlueFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x679df5)
 /// 浅灰色字体颜色
 let kLightGaryFontColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0xdcdcdc)
 /// 红色字体颜色

@@ -4,27 +4,67 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>订单管理</string>
+		<string>辅导</string>
 		<key>image</key>
-		<string>icon_order_menu</string>
+		<string>icon_home_fudao</string>
+		<key>controller</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>报表统计</string>
+		<string>舞蹈</string>
 		<key>image</key>
-		<string>icon_table_menu</string>
+		<string>icon_home_wudao</string>
+		<key>controller</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>商品信息</string>
+		<string>书画</string>
 		<key>image</key>
-		<string>icon_goods_menu</string>
+		<string>icon_home_shuhua</string>
+		<key>controller</key>
+		<string></string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>商家设置</string>
+		<string>体育</string>
 		<key>image</key>
-		<string>icon_setting_menu</string>
+		<string>icon_home_tiyu</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>音乐</string>
+		<key>image</key>
+		<string>icon_home_music</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>留学</string>
+		<key>image</key>
+		<string>icon_home_liuxue</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>早教</string>
+		<key>image</key>
+		<string>icon_home_zaojiao</string>
+		<key>controller</key>
+		<string></string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>其他</string>
+		<key>image</key>
+		<string>icon_home_other</string>
+		<key>controller</key>
+		<string></string>
 	</dict>
 </array>
 </plist>
