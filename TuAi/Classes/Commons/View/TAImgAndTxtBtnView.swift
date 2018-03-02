@@ -1,17 +1,16 @@
 //
-//  TAFuncModelView.swift
+//  TAImgAndTxtBtnView.swift
 //  TuAi
-//  功能模块的按钮View
+//  图文btn，图片在上，文字在下
 //  Created by gouyz on 2018/3/2.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-class TAFuncModelView: UIView {
-
+class TAImgAndTxtBtnView: UIView {
     ///图片尺寸大小
-    var imgSize: CGSize = CGSize.init(width: 35, height: 35)
+    var imgSize: CGSize = CGSize.init(width: 20, height: 18)
     // MARK: 生命周期方法
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,14 +39,14 @@ class TAFuncModelView: UIView {
         addSubview(menuTitle)
         
         menuImg.snp.makeConstraints { (make) in
-            make.top.equalTo(20)
+            make.top.equalTo(self)
             make.centerX.equalTo(self)
             make.size.equalTo(imgSize)
         }
         menuTitle.snp.makeConstraints { (make) in
-            make.top.equalTo(menuImg.snp.bottom).offset(kMargin)
+            make.top.equalTo(menuImg.snp.bottom).offset(5)
             make.left.right.equalTo(self)
-            make.bottom.equalTo(-15)
+            make.bottom.equalTo(self)
         }
     }
     
@@ -57,7 +56,7 @@ class TAFuncModelView: UIView {
     lazy var menuTitle : UILabel = {
         let lab = UILabel()
         lab.textColor = kBlackFontColor
-        lab.font = k13Font
+        lab.font = k10Font
         lab.textAlignment = .center
         
         return lab

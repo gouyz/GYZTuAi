@@ -10,6 +10,7 @@ import UIKit
 
 
 private let homeFuncMenuCell = "homeFuncMenuCell"
+private let homeJingHuaCell = "homeJingHuaCell"
 private let homeJingHuaHeader = "homeJingHuaHeader"
 
 class TAHomeJingHuaVC: GYZBaseVC {
@@ -52,13 +53,7 @@ class TAHomeJingHuaVC: GYZBaseVC {
         
         table.register(TAHomeMenuCell.self, forCellReuseIdentifier: homeFuncMenuCell)
         table.register(TAJingHuaHeaderView.self, forHeaderFooterViewReuseIdentifier: homeJingHuaHeader)
-//        table.register(LHSHomeServiceCell.self, forCellReuseIdentifier: homeServiceCell)
-//        table.register(LHSHomeActivesCell.self, forCellReuseIdentifier: homeActiveCell)
-        //        weak var weakSelf = self
-        //        ///添加下拉刷新
-        //        GYZTool.addPullRefresh(scorllView: table, pullRefreshCallBack: {
-        //            weakSelf?.refresh()
-        //        })
+        table.register(TAJingHuaCell.self, forCellReuseIdentifier: homeJingHuaCell)
         
         return table
     }()
@@ -90,13 +85,21 @@ extension TAHomeJingHuaVC : UITableViewDelegate,UITableViewDataSource,TAHomeMenu
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: homeFuncMenuCell) as! TAHomeMenuCell
-        
-        cell.delegate = self
-        cell.menuDataArr = mFuncModels
-        
-        cell.selectionStyle = .none
-        return cell
+        if indexPath.section == 0 {//功能cell
+            let cell = tableView.dequeueReusableCell(withIdentifier: homeFuncMenuCell) as! TAHomeMenuCell
+            
+            cell.delegate = self
+            cell.menuDataArr = mFuncModels
+            
+            cell.selectionStyle = .none
+            return cell
+        }else{
+            let cell = tableView.dequeueReusableCell(withIdentifier: homeJingHuaCell) as! TAJingHuaCell
+            
+            
+            cell.selectionStyle = .none
+            return cell
+        }
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         

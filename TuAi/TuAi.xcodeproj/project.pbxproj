@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */; };
+		0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */; };
+		0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */; };
 		0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */; };
 		0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70372049298A007A05BD /* ZCycleView.swift */; };
 		0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70382049298A007A05BD /* ZCycleViewCell.swift */; };
@@ -98,6 +101,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaItemView.swift; sourceTree = "<group>"; };
+		0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeVideoCell.swift; sourceTree = "<group>"; };
+		0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImgAndTxtBtnView.swift; sourceTree = "<group>"; };
 		0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeNavigationView.swift; sourceTree = "<group>"; };
 		0A7E70372049298A007A05BD /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
 		0A7E70382049298A007A05BD /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
@@ -252,6 +258,7 @@
 			isa = PBXGroup;
 			children = (
 				0A7E704B204936E4007A05BD /* TAFuncModelView.swift */,
+				0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -363,6 +370,8 @@
 				0A7E7045204935C4007A05BD /* TAHomeMenuCell.swift */,
 				0A7E7051204945A0007A05BD /* TAJingHuaHeaderView.swift */,
 				0A7E705320494A80007A05BD /* TAJingHuaCell.swift */,
+				0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */,
+				0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -907,12 +916,14 @@
 				0AA5CA6C2044237E00768B38 /* GYZNetWork.swift in Sources */,
 				0AA5CA6E2044237E00768B38 /* GYZLunarFormatter.swift in Sources */,
 				0AA5C9FC204421B500768B38 /* GYZBaseNavigationVC.swift in Sources */,
+				0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */,
 				0A7E704420492CB1007A05BD /* TAHomeCommentVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
 				0AA5CA5C2044237E00768B38 /* HXTagCollectionViewCell.m in Sources */,
+				0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */,
 				0AA5C9FE204421B500768B38 /* GYZLoginVC.swift in Sources */,
 				0AA5CA6B2044237E00768B38 /* ContentView.swift in Sources */,
 				0A7E705420494A80007A05BD /* TAJingHuaCell.swift in Sources */,
@@ -939,6 +950,7 @@
 				0AA5CA6A2044237E00768B38 /* ScrollSegmentView.swift in Sources */,
 				0AA5CA6F2044237E00768B38 /* GYZOpenCameraPhotosTool.swift in Sources */,
 				0A7E704020492BC3007A05BD /* TAHomeVideoVC.swift in Sources */,
+				0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */,
 				0A7E703D2049298A007A05BD /* ZCycleLayout.swift in Sources */,
 				0AA5CA602044237E00768B38 /* HXTagCollectionViewFlowLayout.m in Sources */,
 				0AA5CA572044237E00768B38 /* GYZUIViewController+Loading.swift in Sources */,
