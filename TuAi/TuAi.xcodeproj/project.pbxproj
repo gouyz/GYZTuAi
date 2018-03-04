@@ -10,6 +10,10 @@
 		0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */; };
 		0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */; };
 		0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */; };
+		0A4B24AE204ADA190069BB99 /* TAMineUserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */; };
+		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
+		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
+		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
 		0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */; };
 		0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70372049298A007A05BD /* ZCycleView.swift */; };
 		0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70382049298A007A05BD /* ZCycleViewCell.swift */; };
@@ -104,6 +108,10 @@
 		0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaItemView.swift; sourceTree = "<group>"; };
 		0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeVideoCell.swift; sourceTree = "<group>"; };
 		0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImgAndTxtBtnView.swift; sourceTree = "<group>"; };
+		0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineUserInfoCell.swift; sourceTree = "<group>"; };
+		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
+		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
+		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
 		0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeNavigationView.swift; sourceTree = "<group>"; };
 		0A7E70372049298A007A05BD /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
 		0A7E70382049298A007A05BD /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
@@ -422,6 +430,7 @@
 			isa = PBXGroup;
 			children = (
 				0AA5CA76204424E800768B38 /* TAMineVC.swift */,
+				0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -436,6 +445,8 @@
 		0AA5C9C7204421B500768B38 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */,
+				0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -507,6 +518,7 @@
 		0AA5C9D0204421B500768B38 /* SourceDB */ = {
 			isa = PBXGroup;
 			children = (
+				0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */,
 				0AA5C9D1204421B500768B38 /* menuData.plist */,
 			);
 			path = SourceDB;
@@ -820,6 +832,7 @@
 				0AA5C99520441CFB00768B38 /* Assets.xcassets in Resources */,
 				0AA5C99320441CFB00768B38 /* Main.storyboard in Resources */,
 				0AA5CA642044237E00768B38 /* noticeMusic.caf in Resources */,
+				0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */,
 				0AA5C9FA204421B500768B38 /* menuData.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -902,6 +915,7 @@
 				0AA5C9FF204421B500768B38 /* GYZLoginInputView.swift in Sources */,
 				0AA5CA562044237E00768B38 /* GYZDate+Extension.swift in Sources */,
 				0AA5C9FB204421B500768B38 /* GYZMainTabBarVC.swift in Sources */,
+				0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */,
 				0AA5CA532044237E00768B38 /* GYZString+Extension.swift in Sources */,
 				0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */,
 				0AA5CA5E2044237E00768B38 /* HXTagsCell.m in Sources */,
@@ -918,6 +932,7 @@
 				0AA5C9FC204421B500768B38 /* GYZBaseNavigationVC.swift in Sources */,
 				0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */,
 				0A7E704420492CB1007A05BD /* TAHomeCommentVC.swift in Sources */,
+				0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
@@ -955,6 +970,7 @@
 				0AA5CA602044237E00768B38 /* HXTagCollectionViewFlowLayout.m in Sources */,
 				0AA5CA572044237E00768B38 /* GYZUIViewController+Loading.swift in Sources */,
 				0AA5CA512044237E00768B38 /* GYZUIImage+Extension.swift in Sources */,
+				0A4B24AE204ADA190069BB99 /* TAMineUserInfoCell.swift in Sources */,
 				0AA5CA582044237E00768B38 /* GYZEmptyView.swift in Sources */,
 				0AA5CA5B2044237E00768B38 /* GYZLoadingView.swift in Sources */,
 				0AA5CA4E2044237E00768B38 /* GYZUIView+Extension.swift in Sources */,
