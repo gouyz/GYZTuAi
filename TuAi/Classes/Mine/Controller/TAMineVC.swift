@@ -8,8 +8,9 @@
 
 import UIKit
 
+private let mineMenuHeader = "mineMenuHeader"
+private let mineMenuFooter = "mineMenuFooter"
 private let mineMenuCell = "mineMenuCell"
-private let mineInfoCell = "mineInfoCell"
 
 class TAMineVC: GYZBaseVC {
     
@@ -54,6 +55,13 @@ class TAMineVC: GYZBaseVC {
     
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
+        //设置cell的大小
+        layout.itemSize = CGSize(width: kScreenWidth * 0.25, height: 90)
+        
+        //每个Item之间最小的间距
+        layout.minimumInteritemSpacing = 0
+        //每行之间最小的间距
+        layout.minimumLineSpacing = 0
         
         let collView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         collView.dataSource = self
@@ -62,8 +70,32 @@ class TAMineVC: GYZBaseVC {
         
         collView.register(TAMineFuncCell.self, forCellWithReuseIdentifier: mineMenuCell)
         
+        collView.register(TAMineUserHeaderView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: mineMenuHeader)
+        
+        collView.register(TACollectionBlankFooterView.self, forSupplementaryViewOfKind: UICollectionElementKindSectionFooter, withReuseIdentifier: mineMenuFooter)
+        
         return collView
     }()
+    
+    ///控制跳转
+    func goController(menu: TAHomeFuncModel){
+        //1:动态获取命名空间
+        guard let name = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String else {
+            GYZLog("获取命名空间失败")
+            return
+        }
+        
+        let cls: AnyClass? = NSClassFromString(name + "." + menu.controller!) //VCName:表示试图控制器的类名
+        
+        // Swift中如果想通过一个Class来创建一个对象, 必须告诉系统这个Class的确切类型
+        guard let typeClass = cls as? GYZBaseWhiteNavVC.Type else {
+            GYZLog("cls不能当做UIViewController")
+            return
+        }
+        
+        let controller = typeClass.init()
+        navigationController?.pushViewController(controller, animated: true)
+    }
     
 }
 
@@ -84,24 +116,43 @@ extension TAMineVC : UICollectionViewDataSource,UICollectionViewDelegate,UIColle
         return cell
     }
     
+    // 返回自定义HeadView或者FootView
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        var reusableview: UICollectionReusableView!
+        
+        if kind == UICollectionElementKindSectionHeader {
+            
+            if indexPath.section == 0{
+                reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuHeader, for: indexPath) as! TAMineUserHeaderView
+            }
+        }else if kind == UICollectionElementKindSectionFooter{
+            reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuFooter, for: indexPath) as! TACollectionBlankFooterView
+        }
+        
+        return reusableview
+    }
+    
     // MARK: UICollectionViewDelegate的代理方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        goController(menu: mFuncModels[indexPath.section][indexPath.row])
     }
     //MARK: UICollectionViewDelegateFlowLayout
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize.init(width: (kScreenWidth - kMargin * 5)*0.25, height: 90)
-    }
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.init(top: kMargin, left: 5, bottom: 0, right: 5)
-    }
     // 返回footview的宽高
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
-        return CGSize.init(width: kScreenWidth, height: kMargin)
+        
+        if section == 0 {
+            return CGSize(width: kScreenWidth, height: kMargin)
+        }
+        return CGSize(width: kScreenWidth, height: 0)
     }
     // 返回HeadView的宽高
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return CGSize(width: kScreenWidth, height: 80)
+        
+        if section == 0 {
+            return CGSize(width: kScreenWidth, height: 90)
+        }
+        return CGSize(width: kScreenWidth, height: 0)
     }
 }

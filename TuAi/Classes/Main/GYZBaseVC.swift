@@ -14,14 +14,18 @@ class GYZBaseVC: UIViewController {
     var hud : MBProgressHUD?
     var statusBarShouldLight = true
     
+    /// 是否是白色返回键
+    var isWhiteBack = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = kBackgroundColor
         
         if navigationController?.childViewControllers.count > 1 {
+            
             // 添加返回按钮
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "icon_black_white"), style: .done, target: self, action: #selector(clickedBackBtn))
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: (isWhiteBack ? "icon_black_white" : "icon_back_black")), style: .done, target: self, action: #selector(clickedBackBtn))
         }
         
     }
@@ -49,7 +53,7 @@ class GYZBaseVC: UIViewController {
     /// 设置状态栏样式为default,设置导航栏透明
     func setStatusBarStyle(){
         
-        navBarBgAlpha = 0
+//        navBarBgAlpha = 0
         navBarTintColor = kBlackColor
         statusBarShouldLight = false
         setNeedsStatusBarAppearanceUpdate()

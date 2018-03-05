@@ -1,19 +1,18 @@
 //
-//  TAMineUserInfoCell.swift
+//  TAMineUserHeaderView.swift
 //  TuAi
 //  个人资料 cell
-//  Created by gouyz on 2018/3/3.
+//  Created by gouyz on 2018/3/5.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-class TAMineUserInfoCell: UITableViewCell {
-
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?){
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+class TAMineUserHeaderView: UICollectionReusableView {
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
-        contentView.backgroundColor = kWhiteColor
+        self.backgroundColor = kBackgroundColor
         setupUI()
     }
     
@@ -23,15 +22,21 @@ class TAMineUserInfoCell: UITableViewCell {
     
     func setupUI(){
         
-        contentView.addSubview(userImgView)
-        contentView.addSubview(nameLab)
-        contentView.addSubview(confirmLab)
-        contentView.addSubview(desLab)
-        contentView.addSubview(rightIconView)
+        addSubview(bgView)
+        bgView.backgroundColor = kWhiteColor
+        bgView.addSubview(userImgView)
+        bgView.addSubview(nameLab)
+        bgView.addSubview(confirmLab)
+        bgView.addSubview(desLab)
+        bgView.addSubview(rightIconView)
         
+        bgView.snp.makeConstraints { (make) in
+            make.left.top.right.equalTo(self)
+            make.bottom.equalTo(-kMargin)
+        }
         userImgView.snp.makeConstraints { (make) in
             make.left.equalTo(kMargin)
-            make.centerY.equalTo(contentView)
+            make.centerY.equalTo(bgView)
             make.size.equalTo(CGSize.init(width: 60, height: 60))
         }
         nameLab.snp.makeConstraints { (make) in
@@ -53,11 +58,12 @@ class TAMineUserInfoCell: UITableViewCell {
         }
         rightIconView.snp.makeConstraints { (make) in
             make.right.equalTo(-kMargin)
-            make.centerY.equalTo(contentView)
+            make.centerY.equalTo(bgView)
             make.size.equalTo(CGSize.init(width: 8, height: 10))
         }
     }
     
+    lazy var bgView : UIView = UIView()
     /// 用户头像图片
     lazy var userImgView : UIImageView = {
         let imgView = UIImageView()

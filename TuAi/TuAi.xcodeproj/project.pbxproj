@@ -10,7 +10,6 @@
 		0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */; };
 		0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */; };
 		0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */; };
-		0A4B24AE204ADA190069BB99 /* TAMineUserInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */; };
 		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
 		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
 		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
@@ -28,6 +27,10 @@
 		0A7E705020493A3C007A05BD /* TAHomeFuncModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E704F20493A3C007A05BD /* TAHomeFuncModel.swift */; };
 		0A7E7052204945A0007A05BD /* TAJingHuaHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E7051204945A0007A05BD /* TAJingHuaHeaderView.swift */; };
 		0A7E705420494A80007A05BD /* TAJingHuaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E705320494A80007A05BD /* TAJingHuaCell.swift */; };
+		0A80638B204CF3E2001E5233 /* TAMineUserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80638A204CF3E2001E5233 /* TAMineUserHeaderView.swift */; };
+		0A80638D204CF57F001E5233 /* GYZBaseWhiteNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */; };
+		0A80638F204CF644001E5233 /* TACollectionBlankFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */; };
+		0A806391204D162F001E5233 /* TAMyKeChengCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A806390204D162F001E5233 /* TAMyKeChengCell.swift */; };
 		0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98D20441CFB00768B38 /* AppDelegate.swift */; };
 		0AA5C99020441CFB00768B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98F20441CFB00768B38 /* ViewController.swift */; };
 		0AA5C99320441CFB00768B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5C99120441CFB00768B38 /* Main.storyboard */; };
@@ -108,7 +111,6 @@
 		0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaItemView.swift; sourceTree = "<group>"; };
 		0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeVideoCell.swift; sourceTree = "<group>"; };
 		0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImgAndTxtBtnView.swift; sourceTree = "<group>"; };
-		0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineUserInfoCell.swift; sourceTree = "<group>"; };
 		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
 		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
 		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
@@ -126,6 +128,10 @@
 		0A7E704F20493A3C007A05BD /* TAHomeFuncModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeFuncModel.swift; sourceTree = "<group>"; };
 		0A7E7051204945A0007A05BD /* TAJingHuaHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaHeaderView.swift; sourceTree = "<group>"; };
 		0A7E705320494A80007A05BD /* TAJingHuaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaCell.swift; sourceTree = "<group>"; };
+		0A80638A204CF3E2001E5233 /* TAMineUserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineUserHeaderView.swift; sourceTree = "<group>"; };
+		0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZBaseWhiteNavVC.swift; sourceTree = "<group>"; };
+		0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACollectionBlankFooterView.swift; sourceTree = "<group>"; };
+		0A806390204D162F001E5233 /* TAMyKeChengCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengCell.swift; sourceTree = "<group>"; };
 		0AA5C98A20441CFB00768B38 /* TuAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA5C98D20441CFB00768B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA5C98F20441CFB00768B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -445,8 +451,10 @@
 		0AA5C9C7204421B500768B38 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				0A4B24AD204ADA190069BB99 /* TAMineUserInfoCell.swift */,
 				0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */,
+				0A80638A204CF3E2001E5233 /* TAMineUserHeaderView.swift */,
+				0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */,
+				0A806390204D162F001E5233 /* TAMyKeChengCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -530,6 +538,7 @@
 				0AA5C9D3204421B500768B38 /* GYZMainTabBarVC.swift */,
 				0AA5C9D4204421B500768B38 /* GYZBaseNavigationVC.swift */,
 				0AA5C9D5204421B500768B38 /* GYZBaseVC.swift */,
+				0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -919,9 +928,11 @@
 				0AA5CA532044237E00768B38 /* GYZString+Extension.swift in Sources */,
 				0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */,
 				0AA5CA5E2044237E00768B38 /* HXTagsCell.m in Sources */,
+				0A80638F204CF644001E5233 /* TACollectionBlankFooterView.swift in Sources */,
 				0AA5CA722044237E00768B38 /* GYZTool.swift in Sources */,
 				0AA5CA702044237E00768B38 /* GYZAlertViewTools.swift in Sources */,
 				0AA5CA732044237E00768B38 /* GYZConst.swift in Sources */,
+				0A80638D204CF57F001E5233 /* GYZBaseWhiteNavVC.swift in Sources */,
 				0A7E7052204945A0007A05BD /* TAJingHuaHeaderView.swift in Sources */,
 				0AA5CA652044237E00768B38 /* GYZSheetView.swift in Sources */,
 				0A7E7046204935C4007A05BD /* TAHomeMenuCell.swift in Sources */,
@@ -938,6 +949,7 @@
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
 				0AA5CA5C2044237E00768B38 /* HXTagCollectionViewCell.m in Sources */,
+				0A80638B204CF3E2001E5233 /* TAMineUserHeaderView.swift in Sources */,
 				0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */,
 				0AA5C9FE204421B500768B38 /* GYZLoginVC.swift in Sources */,
 				0AA5CA6B2044237E00768B38 /* ContentView.swift in Sources */,
@@ -970,10 +982,10 @@
 				0AA5CA602044237E00768B38 /* HXTagCollectionViewFlowLayout.m in Sources */,
 				0AA5CA572044237E00768B38 /* GYZUIViewController+Loading.swift in Sources */,
 				0AA5CA512044237E00768B38 /* GYZUIImage+Extension.swift in Sources */,
-				0A4B24AE204ADA190069BB99 /* TAMineUserInfoCell.swift in Sources */,
 				0AA5CA582044237E00768B38 /* GYZEmptyView.swift in Sources */,
 				0AA5CA5B2044237E00768B38 /* GYZLoadingView.swift in Sources */,
 				0AA5CA4E2044237E00768B38 /* GYZUIView+Extension.swift in Sources */,
+				0A806391204D162F001E5233 /* TAMyKeChengCell.swift in Sources */,
 				0AA5CA552044237E00768B38 /* GYZUIViewControl+Empty.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

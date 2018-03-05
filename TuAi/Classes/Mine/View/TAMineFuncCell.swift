@@ -23,6 +23,7 @@ class TAMineFuncCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
+        self.backgroundColor = kWhiteColor
         addSubview(menuView)
         
         menuView.snp.makeConstraints { (make) in
