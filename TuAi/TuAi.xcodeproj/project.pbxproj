@@ -31,6 +31,7 @@
 		0A80638D204CF57F001E5233 /* GYZBaseWhiteNavVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */; };
 		0A80638F204CF644001E5233 /* TACollectionBlankFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */; };
 		0A806391204D162F001E5233 /* TAMyKeChengCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A806390204D162F001E5233 /* TAMyKeChengCell.swift */; };
+		0A806393204D27DE001E5233 /* TAMyKeChengDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A806392204D27DE001E5233 /* TAMyKeChengDetailVC.swift */; };
 		0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98D20441CFB00768B38 /* AppDelegate.swift */; };
 		0AA5C99020441CFB00768B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98F20441CFB00768B38 /* ViewController.swift */; };
 		0AA5C99320441CFB00768B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5C99120441CFB00768B38 /* Main.storyboard */; };
@@ -132,6 +133,7 @@
 		0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZBaseWhiteNavVC.swift; sourceTree = "<group>"; };
 		0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACollectionBlankFooterView.swift; sourceTree = "<group>"; };
 		0A806390204D162F001E5233 /* TAMyKeChengCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengCell.swift; sourceTree = "<group>"; };
+		0A806392204D27DE001E5233 /* TAMyKeChengDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengDetailVC.swift; sourceTree = "<group>"; };
 		0AA5C98A20441CFB00768B38 /* TuAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA5C98D20441CFB00768B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA5C98F20441CFB00768B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -437,6 +439,7 @@
 			children = (
 				0AA5CA76204424E800768B38 /* TAMineVC.swift */,
 				0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */,
+				0A806392204D27DE001E5233 /* TAMyKeChengDetailVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -964,6 +967,7 @@
 				0AA5CA5D2044237E00768B38 /* HXTagsView.m in Sources */,
 				0AA5CA6D2044237E00768B38 /* GYZUpdateVersionTool.swift in Sources */,
 				0AA5CA682044237E00768B38 /* SegmentStyle.swift in Sources */,
+				0A806393204D27DE001E5233 /* TAMyKeChengDetailVC.swift in Sources */,
 				0AA5CA632044237E00768B38 /* GYZScanQrcodeVC.swift in Sources */,
 				0AA5CA502044237E00768B38 /* GYZUIButton+Extension.swift in Sources */,
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,

@@ -40,6 +40,12 @@ class TAMyKeChengVC: GYZBaseWhiteNavVC {
         
         return table
     }()
+
+    /// 详情
+    func goDetailVC(){
+        let detailVC = TAMyKeChengDetailVC()
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension TAMyKeChengVC : UITableViewDelegate,UITableViewDataSource{
@@ -66,6 +72,11 @@ extension TAMyKeChengVC : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         return UIView()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        goDetailVC()
     }
     ///MARK : UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
