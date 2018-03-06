@@ -17,7 +17,7 @@
 			<key>image</key>
 			<string>icon_mine_group</string>
 			<key>controller</key>
-			<string></string>
+			<string>TAMyGroupVC</string>
 		</dict>
 		<dict>
 			<key>title</key>
@@ -25,7 +25,7 @@
 			<key>image</key>
 			<string>icon_mine_youhui</string>
 			<key>controller</key>
-			<string></string>
+			<string>TAMyYouHuiVC</string>
 		</dict>
 		<dict>
 			<key>title</key>

@@ -47,7 +47,7 @@ class TAMyKeChengCell: UITableViewCell {
         nameLab.snp.makeConstraints { (make) in
             make.left.equalTo(kcImgView.snp.right).offset(kMargin)
             make.top.equalTo(kcImgView)
-            make.right.lessThanOrEqualTo(-kMargin)
+            make.right.equalTo(-kMargin)
             make.height.equalTo(20)
         }
         categoryLab.snp.makeConstraints { (make) in
