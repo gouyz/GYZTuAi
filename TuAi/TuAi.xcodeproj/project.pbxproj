@@ -13,6 +13,8 @@
 		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
 		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
 		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
+		0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */; };
+		0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */; };
 		0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */; };
 		0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70372049298A007A05BD /* ZCycleView.swift */; };
 		0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70382049298A007A05BD /* ZCycleViewCell.swift */; };
@@ -119,6 +121,8 @@
 		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
 		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
 		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
+		0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyBusinessVC.swift; sourceTree = "<group>"; };
+		0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZLabAndFieldView.swift; sourceTree = "<group>"; };
 		0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeNavigationView.swift; sourceTree = "<group>"; };
 		0A7E70372049298A007A05BD /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
 		0A7E70382049298A007A05BD /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
@@ -283,6 +287,7 @@
 			children = (
 				0A7E704B204936E4007A05BD /* TAFuncModelView.swift */,
 				0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */,
+				0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -450,6 +455,7 @@
 				0A806392204D27DE001E5233 /* TAMyKeChengDetailVC.swift */,
 				0A83CA51204E7E7500F0E20D /* TAMyGroupVC.swift */,
 				0A83CA55204E831400F0E20D /* TAMyYouHuiVC.swift */,
+				0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -951,6 +957,7 @@
 				0AA5CA732044237E00768B38 /* GYZConst.swift in Sources */,
 				0A80638D204CF57F001E5233 /* GYZBaseWhiteNavVC.swift in Sources */,
 				0A7E7052204945A0007A05BD /* TAJingHuaHeaderView.swift in Sources */,
+				0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */,
 				0AA5CA652044237E00768B38 /* GYZSheetView.swift in Sources */,
 				0A7E7046204935C4007A05BD /* TAHomeMenuCell.swift in Sources */,
 				0A7E704E204939E8007A05BD /* TABaseModel.swift in Sources */,
@@ -979,6 +986,7 @@
 				0AA5CA712044237E00768B38 /* GYZThrowLineTool.swift in Sources */,
 				0AA5C9FD204421B500768B38 /* GYZBaseVC.swift in Sources */,
 				0AA5CA542044237E00768B38 /* GYZUIColor+Extension.swift in Sources */,
+				0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */,
 				0AA5CA5D2044237E00768B38 /* HXTagsView.m in Sources */,
 				0AA5CA6D2044237E00768B38 /* GYZUpdateVersionTool.swift in Sources */,
 				0AA5CA682044237E00768B38 /* SegmentStyle.swift in Sources */,

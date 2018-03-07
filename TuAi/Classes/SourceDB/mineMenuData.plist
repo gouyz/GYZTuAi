@@ -57,7 +57,7 @@
 			<key>image</key>
 			<string>icon_mine_business</string>
 			<key>controller</key>
-			<string></string>
+			<string>TAMyBusinessVC</string>
 		</dict>
 	</array>
 	<array>

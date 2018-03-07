@@ -128,7 +128,7 @@ let kGrayLineColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0xdcdcdc)
 /// btn不可点击背景色
 let kBtnNoClickBGColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0xd8d8d8)
 /// btn可点击背景色
-let kBtnClickBGColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x2dae99)
+let kBtnClickBGColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x679df5)
 /// btn可点击浅绿色背景色
 let kBtnClickLightGreenColor : UIColor = UIColor.UIColorFromRGB(valueRGB: 0x36dbc0)
 /// 系统白色
