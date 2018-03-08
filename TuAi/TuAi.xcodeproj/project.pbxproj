@@ -10,6 +10,14 @@
 		0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */; };
 		0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */; };
 		0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */; };
+		0A17A9EB20516879003F1E30 /* TAFuDaoHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9EA20516879003F1E30 /* TAFuDaoHeaderView.swift */; };
+		0A17A9F4205183E9003F1E30 /* TAWuDaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9F3205183E9003F1E30 /* TAWuDaoVC.swift */; };
+		0A17A9F6205185ED003F1E30 /* TALiuXueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9F5205185ED003F1E30 /* TALiuXueVC.swift */; };
+		0A17A9F8205187C5003F1E30 /* TAShuHuaVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9F7205187C5003F1E30 /* TAShuHuaVC.swift */; };
+		0A17A9FA2051882A003F1E30 /* TATiYuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9F92051882A003F1E30 /* TATiYuVC.swift */; };
+		0A17A9FC205188C0003F1E30 /* TAMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FB205188C0003F1E30 /* TAMusicVC.swift */; };
+		0A17A9FE2051891B003F1E30 /* TAZaoJiaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FD2051891B003F1E30 /* TAZaoJiaoVC.swift */; };
+		0A17AA0020518961003F1E30 /* TAOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FF20518961003F1E30 /* TAOtherVC.swift */; };
 		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
 		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
 		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
@@ -130,6 +138,15 @@
 		0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaItemView.swift; sourceTree = "<group>"; };
 		0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeVideoCell.swift; sourceTree = "<group>"; };
 		0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImgAndTxtBtnView.swift; sourceTree = "<group>"; };
+		0A17A9EA20516879003F1E30 /* TAFuDaoHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoHeaderView.swift; sourceTree = "<group>"; };
+		0A17A9EF205178A9003F1E30 /* TuAi-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TuAi-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A17A9F3205183E9003F1E30 /* TAWuDaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAWuDaoVC.swift; sourceTree = "<group>"; };
+		0A17A9F5205185ED003F1E30 /* TALiuXueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TALiuXueVC.swift; sourceTree = "<group>"; };
+		0A17A9F7205187C5003F1E30 /* TAShuHuaVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAShuHuaVC.swift; sourceTree = "<group>"; };
+		0A17A9F92051882A003F1E30 /* TATiYuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TATiYuVC.swift; sourceTree = "<group>"; };
+		0A17A9FB205188C0003F1E30 /* TAMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMusicVC.swift; sourceTree = "<group>"; };
+		0A17A9FD2051891B003F1E30 /* TAZaoJiaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAZaoJiaoVC.swift; sourceTree = "<group>"; };
+		0A17A9FF20518961003F1E30 /* TAOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOtherVC.swift; sourceTree = "<group>"; };
 		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
 		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
 		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
@@ -345,6 +362,7 @@
 		0AA5C98C20441CFB00768B38 /* TuAi */ = {
 			isa = PBXGroup;
 			children = (
+				0A17A9EF205178A9003F1E30 /* TuAi-Bridging-Header.h */,
 				0AA5C98D20441CFB00768B38 /* AppDelegate.swift */,
 				0AA5C98F20441CFB00768B38 /* ViewController.swift */,
 				0AA5C99120441CFB00768B38 /* Main.storyboard */,
@@ -408,6 +426,13 @@
 				0A7E704120492C86007A05BD /* TAHomeJingHuaVC.swift */,
 				0A7E704320492CB1007A05BD /* TAHomeCommentVC.swift */,
 				0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */,
+				0A17A9F3205183E9003F1E30 /* TAWuDaoVC.swift */,
+				0A17A9F5205185ED003F1E30 /* TALiuXueVC.swift */,
+				0A17A9F7205187C5003F1E30 /* TAShuHuaVC.swift */,
+				0A17A9F92051882A003F1E30 /* TATiYuVC.swift */,
+				0A17A9FB205188C0003F1E30 /* TAMusicVC.swift */,
+				0A17A9FD2051891B003F1E30 /* TAZaoJiaoVC.swift */,
+				0A17A9FF20518961003F1E30 /* TAOtherVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -434,6 +459,7 @@
 				0A74960B205116C20036C6F7 /* TACommentGroupCell.swift */,
 				0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */,
 				0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */,
+				0A17A9EA20516879003F1E30 /* TAFuDaoHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -973,7 +999,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A74960C205116C20036C6F7 /* TACommentGroupCell.swift in Sources */,
+				0A17AA0020518961003F1E30 /* TAOtherVC.swift in Sources */,
 				0AA5CA672044237E00768B38 /* GYZSheetCell.swift in Sources */,
+				0A17A9FA2051882A003F1E30 /* TATiYuVC.swift in Sources */,
 				0A7495FC2050BFFF0036C6F7 /* TAStudyProcessingCell.swift in Sources */,
 				0A7E703E2049298A007A05BD /* ZPageControl.swift in Sources */,
 				0A74961220512DD20036C6F7 /* TAFuDaoCell.swift in Sources */,
@@ -1009,12 +1037,15 @@
 				0AA5CA6E2044237E00768B38 /* GYZLunarFormatter.swift in Sources */,
 				0AA5C9FC204421B500768B38 /* GYZBaseNavigationVC.swift in Sources */,
 				0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */,
+				0A17A9F6205185ED003F1E30 /* TALiuXueVC.swift in Sources */,
 				0A7E704420492CB1007A05BD /* TAHomeCommentVC.swift in Sources */,
 				0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
+				0A17A9FE2051891B003F1E30 /* TAZaoJiaoVC.swift in Sources */,
+				0A17A9FC205188C0003F1E30 /* TAMusicVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
 				0A83CA54204E805B00F0E20D /* TAMyGroupCell.swift in Sources */,
 				0AA5CA5C2044237E00768B38 /* HXTagCollectionViewCell.m in Sources */,
@@ -1030,6 +1061,7 @@
 				0AA5CA5F2044237E00768B38 /* HXTagAttribute.m in Sources */,
 				0AA5CA712044237E00768B38 /* GYZThrowLineTool.swift in Sources */,
 				0AA5C9FD204421B500768B38 /* GYZBaseVC.swift in Sources */,
+				0A17A9EB20516879003F1E30 /* TAFuDaoHeaderView.swift in Sources */,
 				0AA5CA542044237E00768B38 /* GYZUIColor+Extension.swift in Sources */,
 				0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */,
 				0AA5CA5D2044237E00768B38 /* HXTagsView.m in Sources */,
@@ -1045,6 +1077,7 @@
 				0AA5CA77204424E800768B38 /* TAMineVC.swift in Sources */,
 				0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */,
 				0A7496042050E3CA0036C6F7 /* TACommentCell.swift in Sources */,
+				0A17A9F4205183E9003F1E30 /* TAWuDaoVC.swift in Sources */,
 				0AA5CA792044251C00768B38 /* TAFavoriteVC.swift in Sources */,
 				0AA5CA622044237E00768B38 /* IQActionSheetViewController.m in Sources */,
 				0A7E704C204936E4007A05BD /* TAFuncModelView.swift in Sources */,
@@ -1055,6 +1088,7 @@
 				0A7E703D2049298A007A05BD /* ZCycleLayout.swift in Sources */,
 				0AA5CA602044237E00768B38 /* HXTagCollectionViewFlowLayout.m in Sources */,
 				0AA5CA572044237E00768B38 /* GYZUIViewController+Loading.swift in Sources */,
+				0A17A9F8205187C5003F1E30 /* TAShuHuaVC.swift in Sources */,
 				0AA5CA512044237E00768B38 /* GYZUIImage+Extension.swift in Sources */,
 				0AA5CA582044237E00768B38 /* GYZEmptyView.swift in Sources */,
 				0AA5CA5B2044237E00768B38 /* GYZLoadingView.swift in Sources */,
@@ -1230,13 +1264,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FPA9N9SK5A;
+				DEVELOPMENT_TEAM = WZ34FX7S74;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gouyz.TuAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuAi/TuAi-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -1248,13 +1285,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FPA9N9SK5A;
+				DEVELOPMENT_TEAM = WZ34FX7S74;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gouyz.TuAi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TuAi/TuAi-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

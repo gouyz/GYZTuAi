@@ -16,7 +16,7 @@
 		<key>image</key>
 		<string>icon_home_wudao</string>
 		<key>controller</key>
-		<string></string>
+		<string>TAWuDaoVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -24,7 +24,7 @@
 		<key>image</key>
 		<string>icon_home_shuhua</string>
 		<key>controller</key>
-		<string></string>
+		<string>TAShuHuaVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -32,7 +32,7 @@
 		<key>image</key>
 		<string>icon_home_tiyu</string>
 		<key>controller</key>
-		<string></string>
+		<string>TATiYuVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -40,7 +40,7 @@
 		<key>image</key>
 		<string>icon_home_music</string>
 		<key>controller</key>
-		<string></string>
+		<string>TAMusicVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -48,7 +48,7 @@
 		<key>image</key>
 		<string>icon_home_liuxue</string>
 		<key>controller</key>
-		<string></string>
+		<string>TALiuXueVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -56,7 +56,7 @@
 		<key>image</key>
 		<string>icon_home_zaojiao</string>
 		<key>controller</key>
-		<string></string>
+		<string>TAZaoJiaoVC</string>
 	</dict>
 	<dict>
 		<key>title</key>
@@ -64,7 +64,7 @@
 		<key>image</key>
 		<string>icon_home_other</string>
 		<key>controller</key>
-		<string></string>
+		<string>TAOtherVC</string>
 	</dict>
 </array>
 </plist>
