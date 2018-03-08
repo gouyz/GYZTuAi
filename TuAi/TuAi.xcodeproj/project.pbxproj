@@ -13,6 +13,18 @@
 		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
 		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
 		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
+		0A7495FC2050BFFF0036C6F7 /* TAStudyProcessingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */; };
+		0A7495FE2050C64E0036C6F7 /* TAStudyRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */; };
+		0A7496002050C73F0036C6F7 /* TAStudyRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FF2050C73F0036C6F7 /* TAStudyRecordHeaderView.swift */; };
+		0A7496022050CD9F0036C6F7 /* TASampleTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7496012050CD9F0036C6F7 /* TASampleTableHeaderView.swift */; };
+		0A7496042050E3CA0036C6F7 /* TACommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7496032050E3CA0036C6F7 /* TACommentCell.swift */; };
+		0A7496062050E5850036C6F7 /* GYZPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7496052050E5850036C6F7 /* GYZPhotoView.swift */; };
+		0A7496082051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7496072051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift */; };
+		0A74960A2051144D0036C6F7 /* TACommentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7496092051144D0036C6F7 /* TACommentHeaderView.swift */; };
+		0A74960C205116C20036C6F7 /* TACommentGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74960B205116C20036C6F7 /* TACommentGroupCell.swift */; };
+		0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */; };
+		0A749610205129A80036C6F7 /* TAFuDaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */; };
+		0A74961220512DD20036C6F7 /* TAFuDaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */; };
 		0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */; };
 		0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */; };
 		0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */; };
@@ -121,6 +133,18 @@
 		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
 		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
 		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
+		0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyProcessingCell.swift; sourceTree = "<group>"; };
+		0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyRecordVC.swift; sourceTree = "<group>"; };
+		0A7495FF2050C73F0036C6F7 /* TAStudyRecordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyRecordHeaderView.swift; sourceTree = "<group>"; };
+		0A7496012050CD9F0036C6F7 /* TASampleTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASampleTableHeaderView.swift; sourceTree = "<group>"; };
+		0A7496032050E3CA0036C6F7 /* TACommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentCell.swift; sourceTree = "<group>"; };
+		0A7496052050E5850036C6F7 /* GYZPhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZPhotoView.swift; sourceTree = "<group>"; };
+		0A7496072051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZImgLeftAndTxtRightView.swift; sourceTree = "<group>"; };
+		0A7496092051144D0036C6F7 /* TACommentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentHeaderView.swift; sourceTree = "<group>"; };
+		0A74960B205116C20036C6F7 /* TACommentGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentGroupCell.swift; sourceTree = "<group>"; };
+		0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentGroupChildCell.swift; sourceTree = "<group>"; };
+		0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoVC.swift; sourceTree = "<group>"; };
+		0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoCell.swift; sourceTree = "<group>"; };
 		0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyBusinessVC.swift; sourceTree = "<group>"; };
 		0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZLabAndFieldView.swift; sourceTree = "<group>"; };
 		0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeNavigationView.swift; sourceTree = "<group>"; };
@@ -288,6 +312,9 @@
 				0A7E704B204936E4007A05BD /* TAFuncModelView.swift */,
 				0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */,
 				0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */,
+				0A7496012050CD9F0036C6F7 /* TASampleTableHeaderView.swift */,
+				0A7496052050E5850036C6F7 /* GYZPhotoView.swift */,
+				0A7496072051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -380,6 +407,7 @@
 				0A7E703F20492BC3007A05BD /* TAHomeVideoVC.swift */,
 				0A7E704120492C86007A05BD /* TAHomeJingHuaVC.swift */,
 				0A7E704320492CB1007A05BD /* TAHomeCommentVC.swift */,
+				0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -401,6 +429,11 @@
 				0A7E705320494A80007A05BD /* TAJingHuaCell.swift */,
 				0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */,
 				0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */,
+				0A7496032050E3CA0036C6F7 /* TACommentCell.swift */,
+				0A7496092051144D0036C6F7 /* TACommentHeaderView.swift */,
+				0A74960B205116C20036C6F7 /* TACommentGroupCell.swift */,
+				0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */,
+				0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -456,6 +489,7 @@
 				0A83CA51204E7E7500F0E20D /* TAMyGroupVC.swift */,
 				0A83CA55204E831400F0E20D /* TAMyYouHuiVC.swift */,
 				0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */,
+				0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -470,12 +504,14 @@
 		0AA5C9C7204421B500768B38 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A7495FF2050C73F0036C6F7 /* TAStudyRecordHeaderView.swift */,
 				0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */,
 				0A80638A204CF3E2001E5233 /* TAMineUserHeaderView.swift */,
 				0A80638E204CF644001E5233 /* TACollectionBlankFooterView.swift */,
 				0A806390204D162F001E5233 /* TAMyKeChengCell.swift */,
 				0A83CA53204E805B00F0E20D /* TAMyGroupCell.swift */,
 				0A83CA57204E83A900F0E20D /* TAMyYouHuiCell.swift */,
+				0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -936,12 +972,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A74960C205116C20036C6F7 /* TACommentGroupCell.swift in Sources */,
 				0AA5CA672044237E00768B38 /* GYZSheetCell.swift in Sources */,
+				0A7495FC2050BFFF0036C6F7 /* TAStudyProcessingCell.swift in Sources */,
 				0A7E703E2049298A007A05BD /* ZPageControl.swift in Sources */,
+				0A74961220512DD20036C6F7 /* TAFuDaoCell.swift in Sources */,
+				0A7496062050E5850036C6F7 /* GYZPhotoView.swift in Sources */,
 				0AA5C99020441CFB00768B38 /* ViewController.swift in Sources */,
 				0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */,
+				0A7496002050C73F0036C6F7 /* TAStudyRecordHeaderView.swift in Sources */,
 				0A83CA56204E831400F0E20D /* TAMyYouHuiVC.swift in Sources */,
 				0AA5CA592044237E00768B38 /* AXBadgeView.swift in Sources */,
+				0A74960A2051144D0036C6F7 /* TACommentHeaderView.swift in Sources */,
+				0A749610205129A80036C6F7 /* TAFuDaoVC.swift in Sources */,
 				0A83CA58204E83A900F0E20D /* TAMyYouHuiCell.swift in Sources */,
 				0A7E704220492C86007A05BD /* TAHomeJingHuaVC.swift in Sources */,
 				0AA5C9FF204421B500768B38 /* GYZLoginInputView.swift in Sources */,
@@ -970,6 +1013,7 @@
 				0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
+				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
 				0A83CA54204E805B00F0E20D /* TAMyGroupCell.swift in Sources */,
@@ -981,6 +1025,7 @@
 				0A7E705420494A80007A05BD /* TAJingHuaCell.swift in Sources */,
 				0AA5CA7B2044254F00768B38 /* TAFriendsVC.swift in Sources */,
 				0AA5CA5A2044237E00768B38 /* LHSCustomAlertView.swift in Sources */,
+				0A7496022050CD9F0036C6F7 /* TASampleTableHeaderView.swift in Sources */,
 				0AA5CA522044237E00768B38 /* MBProgressHUD+Extension.swift in Sources */,
 				0AA5CA5F2044237E00768B38 /* HXTagAttribute.m in Sources */,
 				0AA5CA712044237E00768B38 /* GYZThrowLineTool.swift in Sources */,
@@ -991,6 +1036,7 @@
 				0AA5CA6D2044237E00768B38 /* GYZUpdateVersionTool.swift in Sources */,
 				0AA5CA682044237E00768B38 /* SegmentStyle.swift in Sources */,
 				0A806393204D27DE001E5233 /* TAMyKeChengDetailVC.swift in Sources */,
+				0A7495FE2050C64E0036C6F7 /* TAStudyRecordVC.swift in Sources */,
 				0AA5CA632044237E00768B38 /* GYZScanQrcodeVC.swift in Sources */,
 				0AA5CA502044237E00768B38 /* GYZUIButton+Extension.swift in Sources */,
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,
@@ -998,6 +1044,7 @@
 				0A7E705020493A3C007A05BD /* TAHomeFuncModel.swift in Sources */,
 				0AA5CA77204424E800768B38 /* TAMineVC.swift in Sources */,
 				0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */,
+				0A7496042050E3CA0036C6F7 /* TACommentCell.swift in Sources */,
 				0AA5CA792044251C00768B38 /* TAFavoriteVC.swift in Sources */,
 				0AA5CA622044237E00768B38 /* IQActionSheetViewController.m in Sources */,
 				0A7E704C204936E4007A05BD /* TAFuncModelView.swift in Sources */,
@@ -1014,6 +1061,7 @@
 				0AA5CA4E2044237E00768B38 /* GYZUIView+Extension.swift in Sources */,
 				0A806391204D162F001E5233 /* TAMyKeChengCell.swift in Sources */,
 				0AA5CA552044237E00768B38 /* GYZUIViewControl+Empty.swift in Sources */,
+				0A7496082051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift in Sources */,
 				0A83CA52204E7E7500F0E20D /* TAMyGroupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

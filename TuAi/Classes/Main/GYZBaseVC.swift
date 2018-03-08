@@ -25,7 +25,7 @@ class GYZBaseVC: UIViewController {
         if navigationController?.childViewControllers.count > 1 {
             
             // 添加返回按钮
-            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: (isWhiteBack ? "icon_black_white" : "icon_back_black")), style: .done, target: self, action: #selector(clickedBackBtn))
+            self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: (isWhiteBack ? "icon_back_white" : "icon_back_black")), style: .done, target: self, action: #selector(clickedBackBtn))
         }
         
     }

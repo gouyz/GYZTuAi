@@ -41,7 +41,7 @@
 			<key>image</key>
 			<string>icon_mine_record</string>
 			<key>controller</key>
-			<string></string>
+			<string>TAStudyRecordVC</string>
 		</dict>
 		<dict>
 			<key>title</key>

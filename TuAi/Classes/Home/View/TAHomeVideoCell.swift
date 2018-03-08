@@ -31,10 +31,12 @@ class TAHomeVideoCell: UITableViewCell {
         videoImgView.addSubview(nameLab)
         videoImgView.addSubview(categoryNameLab)
         
-        contentView.addSubview(desLab)
-        contentView.addSubview(zanView)
-        contentView.addSubview(conmentView)
-        contentView.addSubview(sharedView)
+        bgView.addSubview(desLab)
+        bgView.addSubview(zanView)
+        bgView.addSubview(conmentView)
+        bgView.addSubview(sharedView)
+        
+        contentView.addSubview(cancleImgView)
         
         bgView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(contentView)
@@ -82,6 +84,12 @@ class TAHomeVideoCell: UITableViewCell {
             make.centerY.equalTo(desLab)
             make.height.equalTo(34)
             make.width.equalTo(30)
+        }
+        cancleImgView.snp.makeConstraints { (make) in
+            make.right.equalTo(videoImgView)
+            make.bottom.equalTo(-5)
+            make.top.equalTo(sharedView.snp.bottom).offset(5)
+            make.size.equalTo(CGSize.init(width: 20, height: 13))
         }
     }
     
@@ -164,4 +172,7 @@ class TAHomeVideoCell: UITableViewCell {
         return view
         
     }()
+    
+    /// 取消按钮
+    lazy var cancleImgView : UIImageView = UIImageView.init(image: UIImage.init(named: "icon_video_cancle"))
 }
