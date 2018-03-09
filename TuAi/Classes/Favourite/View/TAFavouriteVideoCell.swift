@@ -26,6 +26,8 @@ class TAFavouriteVideoCell: UITableViewCell {
         contentView.backgroundColor = kBackgroundColor
         
         contentView.addSubview(bgView)
+        bgView.backgroundColor = kWhiteColor
+        
         bgView.addSubview(userImgView)
         bgView.addSubview(nameLab)
         bgView.addSubview(desLab)
