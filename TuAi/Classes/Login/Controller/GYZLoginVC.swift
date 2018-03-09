@@ -10,7 +10,7 @@ import UIKit
 import SwiftyJSON
 import MBProgressHUD
 
-class GYZLoginVC: GYZBaseVC {
+class GYZLoginVC: GYZBaseWhiteNavVC {
     
     /// 输入手机号码是否合法
     var validPhone : Bool = false
@@ -20,8 +20,15 @@ class GYZLoginVC: GYZBaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = kWhiteColor
         self.title = "登  录"
+        
+        let rightBtn = UIButton(frame: CGRect.init(x: 0, y: 0, width: 60, height: kTitleHeight))
+        rightBtn.setTitle("注册", for: .normal)
+        rightBtn.setTitleColor(kBlueFontColor, for: .normal)
+        rightBtn.titleLabel?.font = k14Font
+        rightBtn.addTarget(self, action: #selector(onClickedRegister), for: .touchUpInside)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightBtn)
     
         setupUI()
     }
@@ -39,11 +46,15 @@ class GYZLoginVC: GYZBaseVC {
         view.addSubview(pwdInputView)
         view.addSubview(lineView1)
         view.addSubview(loginBtn)
-        view.addSubview(registerBtn)
         view.addSubview(forgetPwdBtn)
         
+        view.addSubview(desLab)
+        view.addSubview(qqImgView)
+        view.addSubview(weChatImgView)
+        view.addSubview(sinaImgView)
+        
         phoneInputView.snp.makeConstraints { (make) in
-            make.top.equalTo(view).offset(30)
+            make.top.equalTo(view).offset(kTitleAndStateHeight * 2)
             make.left.right.equalTo(view)
             make.height.equalTo(kTitleHeight)
         }
@@ -62,23 +73,35 @@ class GYZLoginVC: GYZBaseVC {
             make.top.equalTo(pwdInputView.snp.bottom)
             make.height.equalTo(lineView)
         }
+        forgetPwdBtn.snp.makeConstraints { (make) in
+            make.top.equalTo(lineView1.snp.bottom).offset(kMargin)
+            make.right.equalTo(pwdInputView).offset(-kStateHeight)
+            make.size.equalTo(CGSize(width:70,height:kStateHeight))
+        }
         loginBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(lineView1.snp.bottom).offset(30)
+            make.top.equalTo(forgetPwdBtn.snp.bottom).offset(30)
             make.left.equalTo(view).offset(kStateHeight)
             make.right.equalTo(view).offset(-kStateHeight)
             make.height.equalTo(kUIButtonHeight)
         }
-        registerBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(loginBtn.snp.bottom).offset(kStateHeight)
+        desLab.snp.makeConstraints { (make) in
             make.left.right.equalTo(loginBtn)
-            make.height.equalTo(loginBtn)
+            make.top.equalTo(loginBtn.snp.bottom).offset(kTitleHeight)
+            make.height.equalTo(30)
         }
-        forgetPwdBtn.snp.makeConstraints { (make) in
-            make.top.equalTo(registerBtn.snp.bottom).offset(kMargin)
-            make.right.equalTo(pwdInputView).offset(-kStateHeight)
-            make.size.equalTo(CGSize(width:70,height:kStateHeight))
+        qqImgView.snp.makeConstraints { (make) in
+            make.right.equalTo(weChatImgView.snp.left).offset(-20)
+            make.top.size.equalTo(weChatImgView)
         }
-//        GYZTool.setupButton(button: registerBtn)
+        weChatImgView.snp.makeConstraints { (make) in
+            make.centerX.equalTo(view)
+            make.top.equalTo(desLab.snp.bottom).offset(30)
+            make.size.equalTo(CGSize.init(width: 60, height: 60))
+        }
+        sinaImgView.snp.makeConstraints { (make) in
+            make.left.equalTo(weChatImgView.snp.right).offset(20)
+            make.top.size.equalTo(weChatImgView)
+        }
     }
     /// 手机号
     fileprivate lazy var phoneInputView : GYZLoginInputView = GYZLoginInputView(iconName: "icon_login_phone", placeHolder: "请输入手机号码", isPhone: true)
@@ -102,7 +125,7 @@ class GYZLoginVC: GYZBaseVC {
     fileprivate lazy var forgetPwdBtn : UIButton = {
         let btn = UIButton.init(type: .custom)
         btn.setTitle("忘记密码?", for: .normal)
-        btn.setTitleColor(kYellowFontColor, for: .normal)
+        btn.setTitleColor(kBlueFontColor, for: .normal)
         btn.titleLabel?.font = k15Font
         btn.titleLabel?.textAlignment = .right
         btn.addTarget(self, action: #selector(clickedForgetPwdBtn(btn:)), for: .touchUpInside)
@@ -121,25 +144,28 @@ class GYZLoginVC: GYZBaseVC {
         return btn
     }()
     
-    /// 注册
-    fileprivate lazy var registerBtn : UIButton = {
-        let btn = UIButton.init(type: .custom)
-        btn.backgroundColor = kWhiteColor
-        btn.setTitle("立即注册", for: .normal)
-        btn.setImage(UIImage.init(named: "icon_register_next"), for: .normal)
-        btn.setTitleColor(kYellowFontColor, for: .normal)
-        btn.titleLabel?.font = k15Font
+    ///
+    lazy var desLab : UILabel = {
+        let lab = UILabel()
+        lab.textColor = kBlackFontColor
+        lab.font = k15Font
+        lab.text = "其他登录方式"
+        lab.textAlignment = .center
         
-        btn.addTarget(self, action: #selector(clickedRegisterBtn(btn:)), for: .touchUpInside)
-        btn.borderColor = kBtnClickBGColor
-        btn.borderWidth = klineWidth
-        btn.cornerRadius = kCornerRadius
-        return btn
+        return lab
     }()
+    /// QQ
+    lazy var qqImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_qq"))
+    /// 微信
+    lazy var weChatImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_wechat"))
+    /// 新浪
+    lazy var sinaImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_sina"))
     
     /// 注册
-    @objc func clickedRegisterBtn(btn: UIButton){
-        
+    @objc func onClickedRegister(){
+        let forgetPwdVC = TAForgetPwdVC()
+        forgetPwdVC.isRegister = true
+        navigationController?.pushViewController(forgetPwdVC, animated: true)
     }
     /// 登录
     @objc func clickedLoginBtn(btn: UIButton) {
@@ -147,7 +173,9 @@ class GYZLoginVC: GYZBaseVC {
     }
     /// 忘记密码
     @objc func clickedForgetPwdBtn(btn: UIButton) {
-        
+        let forgetPwdVC = TAForgetPwdVC()
+        forgetPwdVC.isRegister = false
+        navigationController?.pushViewController(forgetPwdVC, animated: true)
     }
     
     /// 请求服务器版本

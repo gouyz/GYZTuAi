@@ -97,6 +97,11 @@ class TAMineVC: GYZBaseVC {
         navigationController?.pushViewController(controller, animated: true)
     }
     
+    /// 登录
+    @objc func goLoginClicked(){
+        let loginVC = GYZLoginVC()
+        navigationController?.pushViewController(loginVC, animated: true)
+    }
 }
 
 extension TAMineVC : UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
@@ -125,6 +130,8 @@ extension TAMineVC : UICollectionViewDataSource,UICollectionViewDelegate,UIColle
             
             if indexPath.section == 0{
                 reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuHeader, for: indexPath) as! TAMineUserHeaderView
+                
+                (reusableview as! TAMineUserHeaderView).bgView.addOnClickListener(target: self, action: #selector(goLoginClicked))
             }
         }else if kind == UICollectionElementKindSectionFooter{
             reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuFooter, for: indexPath) as! TACollectionBlankFooterView
