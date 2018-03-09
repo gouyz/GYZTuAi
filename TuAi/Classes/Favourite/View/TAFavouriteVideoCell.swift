@@ -48,14 +48,16 @@ class TAFavouriteVideoCell: UITableViewCell {
             make.right.equalTo(-kMargin)
         }
         desLab.snp.makeConstraints { (make) in
-            make.left.right.height.equalTo(nameLab)
+            make.left.right.equalTo(nameLab)
+            make.height.equalTo(20)
             make.top.equalTo(nameLab.snp.bottom)
         }
         
         collectionView.snp.makeConstraints { (make) in
-            make.left.right.bottom.equalTo(bgView)
+            make.right.bottom.equalTo(bgView)
+            make.left.equalTo(kMargin)
             make.top.equalTo(desLab.snp.bottom).offset(5)
-            make.height.equalTo(120)
+            make.height.equalTo(130)
         }
     }
     
@@ -91,10 +93,10 @@ class TAFavouriteVideoCell: UITableViewCell {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         //设置cell的大小
-        layout.itemSize = CGSize(width: 150, height: 120)
+        layout.itemSize = CGSize(width: 160, height: 130)
         
         //每个Item之间最小的间距
-        layout.minimumInteritemSpacing = kMargin
+        layout.minimumInteritemSpacing = 0
         //每行之间最小的间距
         layout.minimumLineSpacing = kMargin
         

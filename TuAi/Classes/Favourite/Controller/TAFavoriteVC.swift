@@ -33,7 +33,7 @@ class TAFavoriteVC: GYZBaseVC,ContentViewDelegate {
         
         let tuWenVC = TAFavouriteTuWenVC()
         
-        let videoVC = TAHomeVideoVC()
+        let videoVC = TAFavouriteVideoVC()
         
         return [tuWenVC,videoVC]
     }

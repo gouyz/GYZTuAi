@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A15B5FA2052AFE60023D108 /* TAFavouriteVideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A15B5F92052AFE60023D108 /* TAFavouriteVideoVC.swift */; };
 		0A162AA820497F4C003AF0F9 /* TAJingHuaItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */; };
 		0A162AAA20498E37003AF0F9 /* TAHomeVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */; };
 		0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */; };
@@ -139,6 +140,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A15B5F92052AFE60023D108 /* TAFavouriteVideoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteVideoVC.swift; sourceTree = "<group>"; };
 		0A162AA720497F4C003AF0F9 /* TAJingHuaItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJingHuaItemView.swift; sourceTree = "<group>"; };
 		0A162AA920498E37003AF0F9 /* TAHomeVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeVideoCell.swift; sourceTree = "<group>"; };
 		0A162AAD2049982B003AF0F9 /* TAImgAndTxtBtnView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAImgAndTxtBtnView.swift; sourceTree = "<group>"; };
@@ -565,6 +567,7 @@
 			children = (
 				0AA5CA782044251C00768B38 /* TAFavoriteVC.swift */,
 				0A9A611D20526C4800B7D28D /* TAFavouriteTuWenVC.swift */,
+				0A15B5F92052AFE60023D108 /* TAFavouriteVideoVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1055,6 +1058,7 @@
 				0A17A9F6205185ED003F1E30 /* TALiuXueVC.swift in Sources */,
 				0A7E704420492CB1007A05BD /* TAHomeCommentVC.swift in Sources */,
 				0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */,
+				0A15B5FA2052AFE60023D108 /* TAFavouriteVideoVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
@@ -1282,7 +1286,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FPA9N9SK5A;
+				DEVELOPMENT_TEAM = WZ34FX7S74;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1303,7 +1307,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = FPA9N9SK5A;
+				DEVELOPMENT_TEAM = WZ34FX7S74;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
