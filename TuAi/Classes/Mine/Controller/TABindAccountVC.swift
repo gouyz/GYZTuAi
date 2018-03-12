@@ -1,23 +1,23 @@
 //
-//  TAAccountAndSafeVC.swift
+//  TABindAccountVC.swift
 //  TuAi
-//  账号和安全
+//  社交账号绑定
 //  Created by gouyz on 2018/3/12.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-private let accountAndSafeCell = "accountAndSafeCell"
+private let bindAccountCell = "bindAccountCell"
 
-class TAAccountAndSafeVC: GYZBaseWhiteNavVC {
+class TABindAccountVC: GYZBaseWhiteNavVC {
+
+    let titleArr: [String] = ["微信账号","QQ账号","微博账号"]
     
-    let titleArr: [String] = ["修改账号密码","手机号","邮箱","社交账号绑定"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.navigationItem.title = "账号和安全"
+        
+        self.navigationItem.title = "社交账号绑定"
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             make.edges.equalTo(0)
@@ -35,7 +35,7 @@ class TAAccountAndSafeVC: GYZBaseWhiteNavVC {
         table.delegate = self
         table.separatorColor = kGrayLineColor
         
-        table.register(TACommonCell.self, forCellReuseIdentifier: accountAndSafeCell)
+        table.register(TASettingCell.self, forCellReuseIdentifier: bindAccountCell)
         
         
         return table
@@ -56,15 +56,9 @@ class TAAccountAndSafeVC: GYZBaseWhiteNavVC {
         let emailVC = TASettingEmailVC()
         self.navigationController?.pushViewController(emailVC, animated: true)
     }
-    
-    /// 社交账号绑定
-    func goBindAccount(){
-        let bindVC = TABindAccountVC()
-        self.navigationController?.pushViewController(bindVC, animated: true)
-    }
 }
 
-extension TAAccountAndSafeVC : UITableViewDelegate,UITableViewDataSource{
+extension TABindAccountVC : UITableViewDelegate,UITableViewDataSource{
     /// MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -76,15 +70,19 @@ extension TAAccountAndSafeVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: accountAndSafeCell) as! TACommonCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: bindAccountCell) as! TASettingCell
         
+        cell.rightIconView.isHidden = true
         cell.nameLab.text = titleArr[indexPath.row]
-        if indexPath.row == 1 {//手机号
-            cell.desLab.text = "138****1111"
+        if indexPath.row == 1 {//QQ
+            cell.desLab.text = "已绑定"
+            cell.switchView.isOn = true
         }else if indexPath.row == 2 { //邮箱
-            cell.desLab.text = "123456789qq.com"
+            cell.desLab.text = "未绑定"
+            cell.switchView.isOn = false
         }else{
-            cell.desLab.text = ""
+            cell.desLab.text = "未绑定"
+            cell.switchView.isOn = false
         }
         
         cell.selectionStyle = .none
@@ -101,19 +99,10 @@ extension TAAccountAndSafeVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        if indexPath.row == 0 {// 修改密码
-            goPwdVC()
-        }else if indexPath.row == 1{/// 修改手机号
-            goModifyPhone()
-        }else if indexPath.row == 2{/// 修改邮箱
-            goModifyEmail()
-        }else if indexPath.row == 3{/// 社交账号绑定
-            goBindAccount()
-        }
     }
     ///MARK : UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return kTitleHeight
+        return 60
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         

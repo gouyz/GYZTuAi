@@ -10,11 +10,22 @@ import UIKit
 import HcdSpecialField
 
 class TAPwdConfirmCodeVC: GYZBaseWhiteNavVC {
+    
+    /// 是否是修改密码
+    var isPwdCode: Bool = true
+    /// 描述内容
+    var mDesContent: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.navigationItem.title = "请输入验证码"
+        if isPwdCode {
+            mDesContent = "短信验证码已发送至138****1111请注意查收"
+            self.navigationItem.title = "请输入验证码"
+        }else{
+            mDesContent = "邮箱验证码已发送至138****1111@qq.com请注意查收"
+            self.navigationItem.title = "请输入邮箱验证码"
+        }
         
         view.addSubview(desLab)
         view.addSubview(specialField)
@@ -46,6 +57,7 @@ class TAPwdConfirmCodeVC: GYZBaseWhiteNavVC {
         }
         
         specialField.addTarget(self, action: #selector(specialFieldDidChangeValue), for: .valueChanged)
+        desLab.text = mDesContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +70,7 @@ class TAPwdConfirmCodeVC: GYZBaseWhiteNavVC {
         lab.font = k15Font
         lab.textColor = kGaryFontColor
         lab.textAlignment = .center
-        lab.text = "短信验证码已发送至138****1111请注意查收"
+        lab.numberOfLines = 2
         
         return lab
     }()
@@ -102,7 +114,10 @@ class TAPwdConfirmCodeVC: GYZBaseWhiteNavVC {
     }()
     /// 完成
     @objc func clickedFinishedBtn(){
-        
+        if isPwdCode {
+            let pwdVC = TASettingPwdVC()
+            self.navigationController?.pushViewController(pwdVC, animated: true)
+        }
     }
     
     /// 重新获取验证码
