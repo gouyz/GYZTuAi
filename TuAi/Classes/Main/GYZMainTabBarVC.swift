@@ -12,6 +12,15 @@ class GYZMainTabBarVC: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let customTabbar: TACustomTabBar = TACustomTabBar.init(frame: self.tabBar.frame)
+        customTabbar.clickBlock = { () in
+            
+            let nav = GYZBaseNavigationVC.init(rootViewController: TAOthersVC())
+            self.present(nav, animated: true, completion: nil)
+        }
+        
+        self.setValue(customTabbar, forKey: "tabBar")
 
         setUp()
     }
@@ -23,7 +32,7 @@ class GYZMainTabBarVC: UITabBarController {
         
         addViewController(TAHomeVC(), title: "首页", normalImgName: "icon_tabbar_home")
         addViewController(TAFavoriteVC(), title: "收藏", normalImgName: "icon_tabbar_favourite")
-        addViewController(TAOthersVC(), title: "", normalImgName: "icon_tabbar_add")
+//        addViewController(TAOthersVC(), title: "", normalImgName: "icon_tabbar_add")
         addViewController(TAFriendsVC(), title: "朋友", normalImgName: "icon_tabbar_friends")
         addViewController(TAMineVC(), title: "我的", normalImgName: "icon_tabbar_mine")
         

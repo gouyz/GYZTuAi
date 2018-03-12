@@ -75,7 +75,7 @@
 			<key>image</key>
 			<string>icon_mine_setting</string>
 			<key>controller</key>
-			<string></string>
+			<string>TASettingVC</string>
 		</dict>
 	</array>
 </array>

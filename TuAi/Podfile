@@ -17,6 +17,8 @@ pod 'Cosmos', '~> 12.0.1' # 星星评分 https://github.com/marketplacer/Cosmos
 pod 'DKImagePickerController' #图片选择器 https://github.com/zhangao0086/DKImagePickerController
 pod 'SKPhotoBrowser' #图片浏览器 https://github.com/suzuki-0000/SKPhotoBrowser
 
+pod 'HcdSpecialField'  #密码输入控件 https://github.com/Jvaeyhcd/HcdSpecialField
+
 #pod 'FSCalendar'  #FSCalendar是一款开源iOS日历控件，支持横向、纵向滑动模式，全屏模式，带有子标题、事件设置等功能 https://github.com/WenchaoD/FSCalendar
 
 end

@@ -36,6 +36,8 @@ let kTitleAndStateHeight : CGFloat = kStateHeight + kTitleHeight
 let kTabBarHeight: CGFloat = kStateHeight > 20.0 ? 83.0 : 49.0
 /// 底部按钮高度
 let kBottomTabbarHeight : CGFloat = 49.0
+/** iphoneX底部的空白面积 安全区域高度*/
+let kSafeAreaBottomHeight: CGFloat = kStateHeight > 20.0 ? 34.0 : 0
 
 /// 按钮高度
 let kUIButtonHeight : Float = 44.0

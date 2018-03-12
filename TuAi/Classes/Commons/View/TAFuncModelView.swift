@@ -11,7 +11,15 @@ import UIKit
 class TAFuncModelView: UIView {
 
     ///图片尺寸大小
-    var imgSize: CGSize = CGSize.init(width: 35, height: 35)
+    var imgSize: CGSize? = CGSize.init(width: 35, height: 35){
+        didSet{
+            if let size = imgSize {
+                menuImg.snp.updateConstraints({ (make) in
+                    make.size.equalTo(size)
+                })
+            }
+        }
+    }
     // MARK: 生命周期方法
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -25,7 +33,7 @@ class TAFuncModelView: UIView {
         if size != nil {
             imgSize = size!
             menuImg.snp.updateConstraints({ (make) in
-                make.size.equalTo(imgSize)
+                make.size.equalTo(imgSize!)
             })
         }
         
@@ -42,7 +50,7 @@ class TAFuncModelView: UIView {
         menuImg.snp.makeConstraints { (make) in
             make.top.equalTo(20)
             make.centerX.equalTo(self)
-            make.size.equalTo(imgSize)
+            make.size.equalTo(imgSize!)
         }
         menuTitle.snp.makeConstraints { (make) in
             make.top.equalTo(menuImg.snp.bottom).offset(kMargin)

@@ -6,6 +6,7 @@ PODS:
     - DKImagePickerController/ImageManager (= 3.8.1)
   - DKImagePickerController/Camera (3.8.1)
   - DKImagePickerController/ImageManager (3.8.1)
+  - HcdSpecialField (0.0.1)
   - IQKeyboardManagerSwift (5.0.6)
   - Kingfisher (4.2.0)
   - MBProgressHUD (1.0.0)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - Alamofire (~> 4.5.1)
   - Cosmos (~> 12.0.1)
   - DKImagePickerController
+  - HcdSpecialField
   - IQKeyboardManagerSwift (~> 5.0.6)
   - Kingfisher (~> 4.2.0)
   - MBProgressHUD (~> 1.0.0)
@@ -30,6 +32,7 @@ SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
   DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
+  HcdSpecialField: 56c5fc7e3d85ca2fb215a81c62b6a26009633876
   IQKeyboardManagerSwift: 02bfbb0dff71c66d0ab77d80d25dfce0c3717735
   Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -38,6 +41,6 @@ SPEC CHECKSUMS:
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: a5e4e88b485bccca169bd4e5c73092b730a452fa
+PODFILE CHECKSUM: a01eb313232123f6e0b49f20ba5c44640c97697a
 
 COCOAPODS: 1.2.0

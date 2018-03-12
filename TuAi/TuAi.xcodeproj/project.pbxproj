@@ -63,6 +63,14 @@
 		0A9A611E20526C4800B7D28D /* TAFavouriteTuWenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A611D20526C4800B7D28D /* TAFavouriteTuWenVC.swift */; };
 		0A9A612020526D7800B7D28D /* TAFavouriteVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A611F20526D7800B7D28D /* TAFavouriteVideoCell.swift */; };
 		0A9A6122205273B200B7D28D /* TAFavouriteVideoChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A6121205273B200B7D28D /* TAFavouriteVideoChildCell.swift */; };
+		0A9DCA0A205654B000E841C1 /* TACustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA09205654B000E841C1 /* TACustomTabBar.swift */; };
+		0A9DCA0C2056792200E841C1 /* TASettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA0B2056792200E841C1 /* TASettingVC.swift */; };
+		0A9DCA0E20567A4B00E841C1 /* TACommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA0D20567A4B00E841C1 /* TACommonCell.swift */; };
+		0A9DCA1020567BD900E841C1 /* TASettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA0F20567BD900E841C1 /* TASettingCell.swift */; };
+		0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA112056934A00E841C1 /* TASettingAutoPlayVC.swift */; };
+		0A9DCA142056957200E841C1 /* TASettingAuToPlayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA132056957200E841C1 /* TASettingAuToPlayCell.swift */; };
+		0A9DCA1620569AAB00E841C1 /* TAAccountAndSafeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA1520569AAB00E841C1 /* TAAccountAndSafeVC.swift */; };
+		0A9DCA182056A0F700E841C1 /* TAPwdConfirmCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DCA172056A0F700E841C1 /* TAPwdConfirmCodeVC.swift */; };
 		0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98D20441CFB00768B38 /* AppDelegate.swift */; };
 		0AA5C99020441CFB00768B38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5C98F20441CFB00768B38 /* ViewController.swift */; };
 		0AA5C99320441CFB00768B38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5C99120441CFB00768B38 /* Main.storyboard */; };
@@ -197,6 +205,14 @@
 		0A9A611D20526C4800B7D28D /* TAFavouriteTuWenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteTuWenVC.swift; sourceTree = "<group>"; };
 		0A9A611F20526D7800B7D28D /* TAFavouriteVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteVideoCell.swift; sourceTree = "<group>"; };
 		0A9A6121205273B200B7D28D /* TAFavouriteVideoChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteVideoChildCell.swift; sourceTree = "<group>"; };
+		0A9DCA09205654B000E841C1 /* TACustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACustomTabBar.swift; sourceTree = "<group>"; };
+		0A9DCA0B2056792200E841C1 /* TASettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASettingVC.swift; sourceTree = "<group>"; };
+		0A9DCA0D20567A4B00E841C1 /* TACommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommonCell.swift; sourceTree = "<group>"; };
+		0A9DCA0F20567BD900E841C1 /* TASettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASettingCell.swift; sourceTree = "<group>"; };
+		0A9DCA112056934A00E841C1 /* TASettingAutoPlayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASettingAutoPlayVC.swift; sourceTree = "<group>"; };
+		0A9DCA132056957200E841C1 /* TASettingAuToPlayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TASettingAuToPlayCell.swift; sourceTree = "<group>"; };
+		0A9DCA1520569AAB00E841C1 /* TAAccountAndSafeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAccountAndSafeVC.swift; sourceTree = "<group>"; };
+		0A9DCA172056A0F700E841C1 /* TAPwdConfirmCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAPwdConfirmCodeVC.swift; sourceTree = "<group>"; };
 		0AA5C98A20441CFB00768B38 /* TuAi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TuAi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA5C98D20441CFB00768B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AA5C98F20441CFB00768B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -342,6 +358,7 @@
 				0A7496012050CD9F0036C6F7 /* TASampleTableHeaderView.swift */,
 				0A7496052050E5850036C6F7 /* GYZPhotoView.swift */,
 				0A7496072051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift */,
+				0A9DCA0D20567A4B00E841C1 /* TACommonCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -526,6 +543,10 @@
 				0A83CA55204E831400F0E20D /* TAMyYouHuiVC.swift */,
 				0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */,
 				0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */,
+				0A9DCA0B2056792200E841C1 /* TASettingVC.swift */,
+				0A9DCA112056934A00E841C1 /* TASettingAutoPlayVC.swift */,
+				0A9DCA1520569AAB00E841C1 /* TAAccountAndSafeVC.swift */,
+				0A9DCA172056A0F700E841C1 /* TAPwdConfirmCodeVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -548,6 +569,8 @@
 				0A83CA53204E805B00F0E20D /* TAMyGroupCell.swift */,
 				0A83CA57204E83A900F0E20D /* TAMyYouHuiCell.swift */,
 				0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */,
+				0A9DCA0F20567BD900E841C1 /* TASettingCell.swift */,
+				0A9DCA132056957200E841C1 /* TASettingAuToPlayCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -636,6 +659,7 @@
 				0AA5C9D4204421B500768B38 /* GYZBaseNavigationVC.swift */,
 				0AA5C9D5204421B500768B38 /* GYZBaseVC.swift */,
 				0A80638C204CF57F001E5233 /* GYZBaseWhiteNavVC.swift */,
+				0A9DCA09205654B000E841C1 /* TACustomTabBar.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1035,7 +1059,9 @@
 				0AA5C9FB204421B500768B38 /* GYZMainTabBarVC.swift in Sources */,
 				0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */,
 				0AA5CA532044237E00768B38 /* GYZString+Extension.swift in Sources */,
+				0A9DCA1620569AAB00E841C1 /* TAAccountAndSafeVC.swift in Sources */,
 				0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */,
+				0A9DCA0E20567A4B00E841C1 /* TACommonCell.swift in Sources */,
 				0A9A6122205273B200B7D28D /* TAFavouriteVideoChildCell.swift in Sources */,
 				0AA5CA5E2044237E00768B38 /* HXTagsCell.m in Sources */,
 				0A9A612020526D7800B7D28D /* TAFavouriteVideoCell.swift in Sources */,
@@ -1049,6 +1075,7 @@
 				0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */,
 				0AA5CA652044237E00768B38 /* GYZSheetView.swift in Sources */,
 				0A7E7046204935C4007A05BD /* TAHomeMenuCell.swift in Sources */,
+				0A9DCA1020567BD900E841C1 /* TASettingCell.swift in Sources */,
 				0A7E704E204939E8007A05BD /* TABaseModel.swift in Sources */,
 				0AA5CA752044249100768B38 /* TAHomeVC.swift in Sources */,
 				0AA5CA6C2044237E00768B38 /* GYZNetWork.swift in Sources */,
@@ -1063,6 +1090,7 @@
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
+				0A9DCA182056A0F700E841C1 /* TAPwdConfirmCodeVC.swift in Sources */,
 				0A17A9FE2051891B003F1E30 /* TAZaoJiaoVC.swift in Sources */,
 				0A17A9FC205188C0003F1E30 /* TAMusicVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
@@ -1081,6 +1109,7 @@
 				0AA5CA712044237E00768B38 /* GYZThrowLineTool.swift in Sources */,
 				0AA5C9FD204421B500768B38 /* GYZBaseVC.swift in Sources */,
 				0A9A611E20526C4800B7D28D /* TAFavouriteTuWenVC.swift in Sources */,
+				0A9DCA142056957200E841C1 /* TASettingAuToPlayCell.swift in Sources */,
 				0A17A9EB20516879003F1E30 /* TAFuDaoHeaderView.swift in Sources */,
 				0AA5CA542044237E00768B38 /* GYZUIColor+Extension.swift in Sources */,
 				0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */,
@@ -1093,6 +1122,7 @@
 				0AA5CA502044237E00768B38 /* GYZUIButton+Extension.swift in Sources */,
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,
 				0AA5CA4F2044237E00768B38 /* ETNavBarTransparent.swift in Sources */,
+				0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */,
 				0A7E705020493A3C007A05BD /* TAHomeFuncModel.swift in Sources */,
 				0AA5CA77204424E800768B38 /* TAMineVC.swift in Sources */,
 				0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */,
@@ -1107,9 +1137,11 @@
 				0A162AAE2049982B003AF0F9 /* TAImgAndTxtBtnView.swift in Sources */,
 				0A7E703D2049298A007A05BD /* ZCycleLayout.swift in Sources */,
 				0AA5CA602044237E00768B38 /* HXTagCollectionViewFlowLayout.m in Sources */,
+				0A9DCA0C2056792200E841C1 /* TASettingVC.swift in Sources */,
 				0AA5CA572044237E00768B38 /* GYZUIViewController+Loading.swift in Sources */,
 				0A17A9F8205187C5003F1E30 /* TAShuHuaVC.swift in Sources */,
 				0AA5CA512044237E00768B38 /* GYZUIImage+Extension.swift in Sources */,
+				0A9DCA0A205654B000E841C1 /* TACustomTabBar.swift in Sources */,
 				0AA5CA582044237E00768B38 /* GYZEmptyView.swift in Sources */,
 				0AA5CA5B2044237E00768B38 /* GYZLoadingView.swift in Sources */,
 				0AA5CA4E2044237E00768B38 /* GYZUIView+Extension.swift in Sources */,
@@ -1286,7 +1318,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZ34FX7S74;
+				DEVELOPMENT_TEAM = FPA9N9SK5A;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1307,7 +1339,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZ34FX7S74;
+				DEVELOPMENT_TEAM = FPA9N9SK5A;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
