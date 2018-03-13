@@ -117,7 +117,7 @@ class GYZPhotoView: UIView {
         
         for index in 0 ..< kMaxSelectCount{
             let imgView: UIImageView = UIImageView()
-            imgView.backgroundColor = kBackgroundColor
+            imgView.backgroundColor = kHeightGaryFontColor
             addSubview(imgView)
             imgView.tag = index
             imgView.addOnClickListener(target: self, action: #selector(onClickedImgView(sender:)))

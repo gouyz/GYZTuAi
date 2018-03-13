@@ -19,6 +19,9 @@
 		0A17A9FC205188C0003F1E30 /* TAMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FB205188C0003F1E30 /* TAMusicVC.swift */; };
 		0A17A9FE2051891B003F1E30 /* TAZaoJiaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FD2051891B003F1E30 /* TAZaoJiaoVC.swift */; };
 		0A17AA0020518961003F1E30 /* TAOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A17A9FF20518961003F1E30 /* TAOtherVC.swift */; };
+		0A314869205761AE009E1986 /* TAModifyFontVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A314868205761AE009E1986 /* TAModifyFontVC.swift */; };
+		0A31486B2057A481009E1986 /* TAFriendsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31486A2057A481009E1986 /* TAFriendsHeaderView.swift */; };
+		0A31486D2057AF77009E1986 /* TAFriendsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A31486C2057AF77009E1986 /* TAFriendsCell.swift */; };
 		0A4B24B0204ADFDA0069BB99 /* mineMenuData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */; };
 		0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */; };
 		0A4B24B4204AEBB00069BB99 /* TAMyKeChengVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */; };
@@ -167,6 +170,9 @@
 		0A17A9FB205188C0003F1E30 /* TAMusicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMusicVC.swift; sourceTree = "<group>"; };
 		0A17A9FD2051891B003F1E30 /* TAZaoJiaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAZaoJiaoVC.swift; sourceTree = "<group>"; };
 		0A17A9FF20518961003F1E30 /* TAOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAOtherVC.swift; sourceTree = "<group>"; };
+		0A314868205761AE009E1986 /* TAModifyFontVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAModifyFontVC.swift; sourceTree = "<group>"; };
+		0A31486A2057A481009E1986 /* TAFriendsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsHeaderView.swift; sourceTree = "<group>"; };
+		0A31486C2057AF77009E1986 /* TAFriendsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsCell.swift; sourceTree = "<group>"; };
 		0A4B24AF204ADFDA0069BB99 /* mineMenuData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mineMenuData.plist; sourceTree = "<group>"; };
 		0A4B24B1204AE4040069BB99 /* TAMineFuncCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMineFuncCell.swift; sourceTree = "<group>"; };
 		0A4B24B3204AEBB00069BB99 /* TAMyKeChengVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyKeChengVC.swift; sourceTree = "<group>"; };
@@ -565,6 +571,7 @@
 				0A4DE2792056D1ED0019FAAA /* TASettingEmailVC.swift */,
 				0A4DE27D2056D3D70019FAAA /* TAInputEmailVC.swift */,
 				0A4DE27F2056D76C0019FAAA /* TABindAccountVC.swift */,
+				0A314868205761AE009E1986 /* TAModifyFontVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -657,6 +664,8 @@
 		0AA5C9CF204421B500768B38 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0A31486A2057A481009E1986 /* TAFriendsHeaderView.swift */,
+				0A31486C2057AF77009E1986 /* TAFriendsCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1098,6 +1107,7 @@
 				0AA5CA652044237E00768B38 /* GYZSheetView.swift in Sources */,
 				0A7E7046204935C4007A05BD /* TAHomeMenuCell.swift in Sources */,
 				0A9DCA1020567BD900E841C1 /* TASettingCell.swift in Sources */,
+				0A31486D2057AF77009E1986 /* TAFriendsCell.swift in Sources */,
 				0A7E704E204939E8007A05BD /* TABaseModel.swift in Sources */,
 				0AA5CA752044249100768B38 /* TAHomeVC.swift in Sources */,
 				0AA5CA6C2044237E00768B38 /* GYZNetWork.swift in Sources */,
@@ -1127,10 +1137,12 @@
 				0AA5CA7B2044254F00768B38 /* TAFriendsVC.swift in Sources */,
 				0AA5CA5A2044237E00768B38 /* LHSCustomAlertView.swift in Sources */,
 				0A7496022050CD9F0036C6F7 /* TASampleTableHeaderView.swift in Sources */,
+				0A31486B2057A481009E1986 /* TAFriendsHeaderView.swift in Sources */,
 				0AA5CA522044237E00768B38 /* MBProgressHUD+Extension.swift in Sources */,
 				0AA5CA5F2044237E00768B38 /* HXTagAttribute.m in Sources */,
 				0AA5CA712044237E00768B38 /* GYZThrowLineTool.swift in Sources */,
 				0AA5C9FD204421B500768B38 /* GYZBaseVC.swift in Sources */,
+				0A314869205761AE009E1986 /* TAModifyFontVC.swift in Sources */,
 				0A9A611E20526C4800B7D28D /* TAFavouriteTuWenVC.swift in Sources */,
 				0A9DCA142056957200E841C1 /* TASettingAuToPlayCell.swift in Sources */,
 				0A17A9EB20516879003F1E30 /* TAFuDaoHeaderView.swift in Sources */,

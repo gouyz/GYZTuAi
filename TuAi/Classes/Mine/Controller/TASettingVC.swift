@@ -70,6 +70,11 @@ class TASettingVC: GYZBaseWhiteNavVC {
         let auToPlayVC = TASettingAutoPlayVC()
         self.navigationController?.pushViewController(auToPlayVC, animated: true)
     }
+    /// 字体大小
+    func goModifyFont(){
+        let fontVC = TAModifyFontVC()
+        self.navigationController?.pushViewController(fontVC, animated: true)
+    }
     /// 账号和安全
     func goAccountVC(){
         let accountVC = TAAccountAndSafeVC()
@@ -141,6 +146,8 @@ extension TASettingVC : UITableViewDelegate,UITableViewDataSource{
         if indexPath.section == 0 {
             if indexPath.row == 1{/// 视频播放网络选择
                 goAuToPlayVC()
+            }else if indexPath.row == 2{// 字体大小
+                goModifyFont()
             }
         }else if indexPath.section == 1{
             if indexPath.row == 0{///账号和安全

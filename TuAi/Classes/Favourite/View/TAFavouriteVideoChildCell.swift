@@ -43,13 +43,7 @@ class TAFavouriteVideoChildCell: UICollectionViewCell {
         return imgView
     }()
     /// 播放图片
-    lazy var playImgView: UIImageView = {
-        let imgView = UIImageView()
-        imgView.backgroundColor = kHeightGaryFontColor
-//        imgView.isHidden = true
-        
-        return imgView
-    }()
+    lazy var playImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_video_play"))
     /// 描述
     lazy var desLab : UILabel = {
         let lab = UILabel()

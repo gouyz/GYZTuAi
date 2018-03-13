@@ -10,7 +10,15 @@ import UIKit
 
 class TAImgAndTxtBtnView: UIView {
     ///图片尺寸大小
-    var imgSize: CGSize = CGSize.init(width: 20, height: 18)
+    var imgSize: CGSize? = CGSize.init(width: 20, height: 18){
+        didSet{
+            if let size = imgSize {
+                menuImg.snp.updateConstraints({ (make) in
+                    make.size.equalTo(size)
+                })
+            }
+        }
+    }
     // MARK: 生命周期方法
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -24,7 +32,7 @@ class TAImgAndTxtBtnView: UIView {
         if size != nil {
             imgSize = size!
             menuImg.snp.updateConstraints({ (make) in
-                make.size.equalTo(imgSize)
+                make.size.equalTo(imgSize!)
             })
         }
         
@@ -41,7 +49,7 @@ class TAImgAndTxtBtnView: UIView {
         menuImg.snp.makeConstraints { (make) in
             make.top.equalTo(self)
             make.centerX.equalTo(self)
-            make.size.equalTo(imgSize)
+            make.size.equalTo(imgSize!)
         }
         menuTitle.snp.makeConstraints { (make) in
             make.top.equalTo(menuImg.snp.bottom).offset(5)

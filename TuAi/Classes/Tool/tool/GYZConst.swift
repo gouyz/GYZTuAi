@@ -66,7 +66,7 @@ let kPhotosImgHeight: CGFloat = (kScreenWidth - 40)/3.0
 /////3列，列间隔为10，距离屏幕边距右10,左50
 let kPhotosImgHeight4Processing: CGFloat = (kScreenWidth - 80)/3.0
 /// 最大上传图片张数
-let kMaxSelectCount = 3
+let kMaxSelectCount = 9
 
 /// 记录版本号的key
 let LHSBundleShortVersionString = "LHSBundleShortVersionString"
@@ -91,6 +91,8 @@ let kDefaultLat = 31.781376
 let kPageSize = 10
 /// 网络数据请求成功标识
 let kQuestSuccessTag = 1
+/// 修改字体大小
+var kModifyFontSize: CGFloat = 0
 
 /// 字体常量
 let k10Font = UIFont.systemFont(ofSize: 10.0)
@@ -157,6 +159,14 @@ func newFeature() -> Bool {
         return true
     }
     return false
+}
+
+/// 动态修改字体大小
+///
+/// - Parameter defaultSize: 默认大小
+/// - Returns: 
+func setFontSize(defaultSize: CGFloat) -> UIFont{
+    return UIFont.systemFont(ofSize: defaultSize + kModifyFontSize)
 }
 
 /****** 自定义Log ******/
