@@ -68,6 +68,10 @@
 		0A83CA54204E805B00F0E20D /* TAMyGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83CA53204E805B00F0E20D /* TAMyGroupCell.swift */; };
 		0A83CA56204E831400F0E20D /* TAMyYouHuiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83CA55204E831400F0E20D /* TAMyYouHuiVC.swift */; };
 		0A83CA58204E83A900F0E20D /* TAMyYouHuiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A83CA57204E83A900F0E20D /* TAMyYouHuiCell.swift */; };
+		0A933F532058BD820082540E /* TAFriendHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F522058BD820082540E /* TAFriendHomeVC.swift */; };
+		0A933F552058CB8F0082540E /* TAFriendsHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */; };
+		0A933F572058F3CA0082540E /* TAScrollPageBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */; };
+		0A933F592058F4980082540E /* TAFriendHomeDynamicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F582058F4980082540E /* TAFriendHomeDynamicVC.swift */; };
 		0A9A611A2052230C00B7D28D /* TAForgetPwdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A61192052230C00B7D28D /* TAForgetPwdVC.swift */; };
 		0A9A611E20526C4800B7D28D /* TAFavouriteTuWenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A611D20526C4800B7D28D /* TAFavouriteTuWenVC.swift */; };
 		0A9A612020526D7800B7D28D /* TAFavouriteVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A611F20526D7800B7D28D /* TAFavouriteVideoCell.swift */; };
@@ -219,6 +223,10 @@
 		0A83CA53204E805B00F0E20D /* TAMyGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyGroupCell.swift; sourceTree = "<group>"; };
 		0A83CA55204E831400F0E20D /* TAMyYouHuiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyYouHuiVC.swift; sourceTree = "<group>"; };
 		0A83CA57204E83A900F0E20D /* TAMyYouHuiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyYouHuiCell.swift; sourceTree = "<group>"; };
+		0A933F522058BD820082540E /* TAFriendHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendHomeVC.swift; sourceTree = "<group>"; };
+		0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsHomeHeaderView.swift; sourceTree = "<group>"; };
+		0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAScrollPageBaseVC.swift; sourceTree = "<group>"; };
+		0A933F582058F4980082540E /* TAFriendHomeDynamicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendHomeDynamicVC.swift; sourceTree = "<group>"; };
 		0A9A61192052230C00B7D28D /* TAForgetPwdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAForgetPwdVC.swift; sourceTree = "<group>"; };
 		0A9A611D20526C4800B7D28D /* TAFavouriteTuWenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteTuWenVC.swift; sourceTree = "<group>"; };
 		0A9A611F20526D7800B7D28D /* TAFavouriteVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFavouriteVideoCell.swift; sourceTree = "<group>"; };
@@ -650,6 +658,9 @@
 			isa = PBXGroup;
 			children = (
 				0AA5CA7A2044254F00768B38 /* TAFriendsVC.swift */,
+				0A933F522058BD820082540E /* TAFriendHomeVC.swift */,
+				0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */,
+				0A933F582058F4980082540E /* TAFriendHomeDynamicVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -666,6 +677,7 @@
 			children = (
 				0A31486A2057A481009E1986 /* TAFriendsHeaderView.swift */,
 				0A31486C2057AF77009E1986 /* TAFriendsCell.swift */,
+				0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1082,6 +1094,7 @@
 				0A83CA58204E83A900F0E20D /* TAMyYouHuiCell.swift in Sources */,
 				0A7E704220492C86007A05BD /* TAHomeJingHuaVC.swift in Sources */,
 				0A4DE27A2056D1ED0019FAAA /* TASettingEmailVC.swift in Sources */,
+				0A933F532058BD820082540E /* TAFriendHomeVC.swift in Sources */,
 				0AA5C9FF204421B500768B38 /* GYZLoginInputView.swift in Sources */,
 				0AA5CA562044237E00768B38 /* GYZDate+Extension.swift in Sources */,
 				0A4DE2802056D76C0019FAAA /* TABindAccountVC.swift in Sources */,
@@ -1123,6 +1136,7 @@
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A9DCA182056A0F700E841C1 /* TAPwdConfirmCodeVC.swift in Sources */,
+				0A933F572058F3CA0082540E /* TAScrollPageBaseVC.swift in Sources */,
 				0A17A9FE2051891B003F1E30 /* TAZaoJiaoVC.swift in Sources */,
 				0A17A9FC205188C0003F1E30 /* TAMusicVC.swift in Sources */,
 				0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */,
@@ -1158,6 +1172,7 @@
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,
 				0AA5CA4F2044237E00768B38 /* ETNavBarTransparent.swift in Sources */,
 				0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */,
+				0A933F592058F4980082540E /* TAFriendHomeDynamicVC.swift in Sources */,
 				0A7E705020493A3C007A05BD /* TAHomeFuncModel.swift in Sources */,
 				0AA5CA77204424E800768B38 /* TAMineVC.swift in Sources */,
 				0AA5C98E20441CFB00768B38 /* AppDelegate.swift in Sources */,
@@ -1184,6 +1199,7 @@
 				0A806391204D162F001E5233 /* TAMyKeChengCell.swift in Sources */,
 				0AA5CA552044237E00768B38 /* GYZUIViewControl+Empty.swift in Sources */,
 				0A7496082051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift in Sources */,
+				0A933F552058CB8F0082540E /* TAFriendsHomeHeaderView.swift in Sources */,
 				0A83CA52204E7E7500F0E20D /* TAMyGroupVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -68,6 +68,14 @@ let kPhotosImgHeight4Processing: CGFloat = (kScreenWidth - 80)/3.0
 /// 最大上传图片张数
 let kMaxSelectCount = 9
 
+/// 动态图片宽度
+/// 一张图片宽度
+let imgWOne: CGFloat = kScreenWidth - 70
+/// 两张或四张图片宽度
+let imgWTwo: CGFloat = (kScreenWidth - 70 - kMargin)/2
+/// 多张图片宽度
+let imgWMore: CGFloat = (kScreenWidth - 70 - kMargin * 2)/3
+
 /// 记录版本号的key
 let LHSBundleShortVersionString = "LHSBundleShortVersionString"
 /// 是否登录标识
@@ -75,6 +83,9 @@ let kIsLoginTagKey = "loginTag"
 
 /// 保存异常信息标识
 let ERROR_MESSAGE = "ERROR_MESSAGE"
+
+///  通知名称
+let kLeaveFromTopNotification = "leaveFromTopNotification"
 
 
 //APPID，应用提交时候替换

@@ -1,40 +1,47 @@
 //
-//  TAFriendsVC.swift
+//  TAFriendHomeDynamicVC.swift
 //  TuAi
-//  朋友
-//  Created by gouyz on 2018/2/26.
+//  朋友主页动态
+//  Created by gouyz on 2018/3/14.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-private let friendsCell = "friendsCell"
+private let friendsHomeDynamicCell = "friendsHomeDynamicCell"
 
-class TAFriendsVC: GYZBaseVC {
+class TAFriendHomeDynamicVC: TAScrollPageBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navBarBgAlpha = 0
-        automaticallyAdjustsScrollViewInsets = false
-        
-        view.addSubview(tableView)
-        tableView.snp.makeConstraints { (make) in
-            
-            if #available(iOS 11.0, *) {
-                make.edges.equalTo(UIEdgeInsets.init(top: -kTitleAndStateHeight, left: 0, bottom: 0, right: 0))
-            }else{
-                make.edges.equalTo(0)
-            }
-            
-        }
-        
-        tableView.tableHeaderView = friendsHeaderView
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        // 通知父控制器重新设置tableView的contentOffset.y
+        delegate?.setupTableViewOffSetYWhenViewWillAppear(scrollView: tableView)
+    }
+    init() {
+        
+        super.init(nibName: nil, bundle: nil)
+        
+        // !!! 不要在viewDidLoad()方法里面设置tableView或者collectionView的偏移量, 在初始化方法中设置偏移量,否则可能导致显示不正常
+        view.addSubview(tableView)
+        tableView.snp.makeConstraints { (make) in
+            
+            make.edges.equalTo(0)
+        }
+        // 设置tableview的内容偏移量
+        
+        tableView.contentInset = UIEdgeInsets(top: defaultOffSetY, left: 0, bottom: 0, right: 0)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     /// 懒加载UITableView
     lazy var tableView : UITableView = {
@@ -48,21 +55,13 @@ class TAFriendsVC: GYZBaseVC {
         // 设置行高为自动适配
         table.rowHeight = UITableViewAutomaticDimension
         
-        table.register(TAFriendsCell.self, forCellReuseIdentifier: friendsCell)
+        table.register(TAFriendsCell.self, forCellReuseIdentifier: friendsHomeDynamicCell)
         
         return table
     }()
-    
-    lazy var friendsHeaderView: TAFriendsHeaderView = TAFriendsHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 260))
-    
-    /// 点击头像，进入朋友主页
-    @objc func clickedUserHeader(sender: UITapGestureRecognizer){
-        let homeVC = TAFriendHomeVC()
-        self.navigationController?.pushViewController(homeVC, animated: true)
-    }
 }
 
-extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
+extension TAFriendHomeDynamicVC : UITableViewDelegate,UITableViewDataSource{
     /// MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -74,8 +73,7 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: friendsCell) as! TAFriendsCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: friendsHomeDynamicCell) as! TAFriendsCell
         
         if indexPath.row == 0 {//一张图片
             cell.imgViews.imgWidth = imgWOne
@@ -127,9 +125,7 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
             
             make.height.equalTo(cell.imgViews.imgHight * rowIndex + kMargin * (rowIndex - 1))
         })
-        
-        cell.userImgView.addOnClickListener(target: self, action: #selector(clickedUserHeader(sender:)))
-        cell.userImgView.tag = indexPath.row
+
         
         cell.selectionStyle = .none
         return cell
@@ -155,26 +151,5 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
         return 0.00001
         
     }
-    
-    //MARK:UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let contentOffsetY = scrollView.contentOffset.y
-        let showNavBarOffsetY = kTitleAndStateHeight - topLayoutGuide.length
-        
-        
-        //navigationBar alpha
-        if contentOffsetY > showNavBarOffsetY  {
-            
-            var navAlpha = (contentOffsetY - (showNavBarOffsetY)) / 100.0
-            if navAlpha > 1 {
-                navAlpha = 1
-            }
-            navBarBgAlpha = navAlpha
-            self.navigationItem.title = "朋友"
-        }else{
-            navBarBgAlpha = 0
-            self.navigationItem.title = ""
-        }
-    }
+
 }
