@@ -18,16 +18,16 @@ class TAScrollPageBaseVC: GYZBaseVC,UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(self, selector: #selector(leaveFromTop), name: NSNotification.Name(rawValue: kLeaveFromTopNotification), object: nil)
+//        NotificationCenter.default.addObserver(self, selector: #selector(leaveFromTop), name: NSNotification.Name(rawValue: kLeaveFromTopNotification), object: nil)
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    @objc func leaveFromTop(){
-        scrollView?.contentOffset = CGPoint.zero
-    }
+//    @objc func leaveFromTop(){
+//        scrollView?.contentOffset = CGPoint.zero
+//    }
     ///MARK:- UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
@@ -44,5 +44,5 @@ class TAScrollPageBaseVC: GYZBaseVC,UIScrollViewDelegate {
 }
 protocol PageViewDelegate: NSObjectProtocol {
     func scrollViewIsScrolling(scrollView: UIScrollView)
-    func setupTableViewOffSetYWhenViewWillAppear(scrollView: UIScrollView)
+//    func setupTableViewOffSetYWhenViewWillAppear(scrollView: UIScrollView)
 }

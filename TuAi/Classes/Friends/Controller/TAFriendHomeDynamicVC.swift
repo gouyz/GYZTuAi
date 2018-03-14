@@ -14,34 +14,17 @@ class TAFriendHomeDynamicVC: TAScrollPageBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        // 通知父控制器重新设置tableView的contentOffset.y
-        delegate?.setupTableViewOffSetYWhenViewWillAppear(scrollView: tableView)
-    }
-    init() {
         
-        super.init(nibName: nil, bundle: nil)
-        
-        // !!! 不要在viewDidLoad()方法里面设置tableView或者collectionView的偏移量, 在初始化方法中设置偏移量,否则可能导致显示不正常
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             
             make.edges.equalTo(0)
         }
-        // 设置tableview的内容偏移量
-        
-        tableView.contentInset = UIEdgeInsets(top: defaultOffSetY, left: 0, bottom: 0, right: 0)
     }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     /// 懒加载UITableView
     lazy var tableView : UITableView = {
@@ -68,7 +51,7 @@ extension TAFriendHomeDynamicVC : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 9
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

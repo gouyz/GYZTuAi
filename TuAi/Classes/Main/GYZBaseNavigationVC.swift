@@ -18,6 +18,13 @@ class GYZBaseNavigationVC: UINavigationController ,UIGestureRecognizerDelegate {
         navBar.tintColor = UIColor.white
         navBar.barTintColor = kNavBarColor
         navBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.white, NSAttributedStringKey.font: k18Font]
+        
+        ///去除Bar的模糊效果，默认为true
+//        if #available(iOS 11.0, *) {
+//            navBar.isTranslucent = true
+//        }else{
+//            navBar.isTranslucent = false
+//        }
         ///去除Bar的模糊效果，默认为true
 //        navBar.isTranslucent = false
         // 右滑返回代理
