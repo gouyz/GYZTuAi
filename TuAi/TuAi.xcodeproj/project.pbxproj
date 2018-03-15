@@ -45,6 +45,18 @@
 		0A74961220512DD20036C6F7 /* TAFuDaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */; };
 		0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */; };
 		0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */; };
+		0A786051205A17E000A38C15 /* TAAboutFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786050205A17E000A38C15 /* TAAboutFriendVC.swift */; };
+		0A786053205A194400A38C15 /* TAAboutFriendHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786052205A194400A38C15 /* TAAboutFriendHeaderView.swift */; };
+		0A786055205A1BCE00A38C15 /* TAAboutFriendConfirmCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786054205A1BCE00A38C15 /* TAAboutFriendConfirmCell.swift */; };
+		0A786057205A22B900A38C15 /* TAAboutFriendInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786056205A22B900A38C15 /* TAAboutFriendInfoCell.swift */; };
+		0A786059205A25B200A38C15 /* TACommonLabCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786058205A25B200A38C15 /* TACommonLabCell.swift */; };
+		0A78605B205A6CD400A38C15 /* TAFriendsGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78605A205A6CD400A38C15 /* TAFriendsGroupVC.swift */; };
+		0A78605D205A6D8000A38C15 /* TAFriendsGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78605C205A6D8000A38C15 /* TAFriendsGroupCell.swift */; };
+		0A786063205A83BE00A38C15 /* TAChartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786062205A83BE00A38C15 /* TAChartVC.swift */; };
+		0A786065205A886A00A38C15 /* TAChartNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786064205A886A00A38C15 /* TAChartNotificationVC.swift */; };
+		0A786067205A8A5B00A38C15 /* TAChartNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786066205A8A5B00A38C15 /* TAChartNotificationCell.swift */; };
+		0A786069205A8DA600A38C15 /* TAChartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786068205A8DA600A38C15 /* TAChartCell.swift */; };
+		0A78606B205A8DCB00A38C15 /* TAChartMessageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A78606A205A8DCB00A38C15 /* TAChartMessageVC.swift */; };
 		0A7E70352048EFEC007A05BD /* TAHomeNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */; };
 		0A7E703B2049298A007A05BD /* ZCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70372049298A007A05BD /* ZCycleView.swift */; };
 		0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7E70382049298A007A05BD /* ZCycleViewCell.swift */; };
@@ -200,6 +212,18 @@
 		0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoCell.swift; sourceTree = "<group>"; };
 		0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyBusinessVC.swift; sourceTree = "<group>"; };
 		0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZLabAndFieldView.swift; sourceTree = "<group>"; };
+		0A786050205A17E000A38C15 /* TAAboutFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAboutFriendVC.swift; sourceTree = "<group>"; };
+		0A786052205A194400A38C15 /* TAAboutFriendHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAboutFriendHeaderView.swift; sourceTree = "<group>"; };
+		0A786054205A1BCE00A38C15 /* TAAboutFriendConfirmCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAboutFriendConfirmCell.swift; sourceTree = "<group>"; };
+		0A786056205A22B900A38C15 /* TAAboutFriendInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAboutFriendInfoCell.swift; sourceTree = "<group>"; };
+		0A786058205A25B200A38C15 /* TACommonLabCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommonLabCell.swift; sourceTree = "<group>"; };
+		0A78605A205A6CD400A38C15 /* TAFriendsGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsGroupVC.swift; sourceTree = "<group>"; };
+		0A78605C205A6D8000A38C15 /* TAFriendsGroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsGroupCell.swift; sourceTree = "<group>"; };
+		0A786062205A83BE00A38C15 /* TAChartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartVC.swift; sourceTree = "<group>"; };
+		0A786064205A886A00A38C15 /* TAChartNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartNotificationVC.swift; sourceTree = "<group>"; };
+		0A786066205A8A5B00A38C15 /* TAChartNotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartNotificationCell.swift; sourceTree = "<group>"; };
+		0A786068205A8DA600A38C15 /* TAChartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartCell.swift; sourceTree = "<group>"; };
+		0A78606A205A8DCB00A38C15 /* TAChartMessageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartMessageVC.swift; sourceTree = "<group>"; };
 		0A7E70342048EFEC007A05BD /* TAHomeNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAHomeNavigationView.swift; sourceTree = "<group>"; };
 		0A7E70372049298A007A05BD /* ZCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleView.swift; sourceTree = "<group>"; };
 		0A7E70382049298A007A05BD /* ZCycleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZCycleViewCell.swift; sourceTree = "<group>"; };
@@ -339,6 +363,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A78605E205A82B100A38C15 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				0A78605F205A82B100A38C15 /* Controller */,
+				0A786060205A82B100A38C15 /* Model */,
+				0A786061205A82B100A38C15 /* View */,
+			);
+			path = Chart;
+			sourceTree = "<group>";
+		};
+		0A78605F205A82B100A38C15 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A786062205A83BE00A38C15 /* TAChartVC.swift */,
+				0A786064205A886A00A38C15 /* TAChartNotificationVC.swift */,
+				0A78606A205A8DCB00A38C15 /* TAChartMessageVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0A786060205A82B100A38C15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A786061205A82B100A38C15 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A786066205A8A5B00A38C15 /* TAChartNotificationCell.swift */,
+				0A786068205A8DA600A38C15 /* TAChartCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0A7E70362049298A007A05BD /* ZCycleView */ = {
 			isa = PBXGroup;
 			children = (
@@ -385,6 +445,7 @@
 				0A7496052050E5850036C6F7 /* GYZPhotoView.swift */,
 				0A7496072051092B0036C6F7 /* GYZImgLeftAndTxtRightView.swift */,
 				0A9DCA0D20567A4B00E841C1 /* TACommonCell.swift */,
+				0A786058205A25B200A38C15 /* TACommonLabCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -447,6 +508,7 @@
 		0AA5C9BB204421B500768B38 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0A78605E205A82B100A38C15 /* Chart */,
 				0A7E7047204936C5007A05BD /* Commons */,
 				0AA5CA162044237E00768B38 /* Tool */,
 				0AA5C9BC204421B500768B38 /* Home */,
@@ -661,6 +723,8 @@
 				0A933F522058BD820082540E /* TAFriendHomeVC.swift */,
 				0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */,
 				0A933F582058F4980082540E /* TAFriendHomeDynamicVC.swift */,
+				0A786050205A17E000A38C15 /* TAAboutFriendVC.swift */,
+				0A78605A205A6CD400A38C15 /* TAFriendsGroupVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -678,6 +742,10 @@
 				0A31486A2057A481009E1986 /* TAFriendsHeaderView.swift */,
 				0A31486C2057AF77009E1986 /* TAFriendsCell.swift */,
 				0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */,
+				0A786052205A194400A38C15 /* TAAboutFriendHeaderView.swift */,
+				0A786054205A1BCE00A38C15 /* TAAboutFriendConfirmCell.swift */,
+				0A786056205A22B900A38C15 /* TAAboutFriendInfoCell.swift */,
+				0A78605C205A6D8000A38C15 /* TAFriendsGroupCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1100,19 +1168,26 @@
 				0A4DE2802056D76C0019FAAA /* TABindAccountVC.swift in Sources */,
 				0AA5C9FB204421B500768B38 /* GYZMainTabBarVC.swift in Sources */,
 				0A4B24B2204AE4040069BB99 /* TAMineFuncCell.swift in Sources */,
+				0A78605B205A6CD400A38C15 /* TAFriendsGroupVC.swift in Sources */,
+				0A786057205A22B900A38C15 /* TAAboutFriendInfoCell.swift in Sources */,
 				0AA5CA532044237E00768B38 /* GYZString+Extension.swift in Sources */,
+				0A786069205A8DA600A38C15 /* TAChartCell.swift in Sources */,
 				0A9DCA1620569AAB00E841C1 /* TAAccountAndSafeVC.swift in Sources */,
 				0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */,
 				0A4DE27E2056D3D70019FAAA /* TAInputEmailVC.swift in Sources */,
+				0A786063205A83BE00A38C15 /* TAChartVC.swift in Sources */,
 				0A9DCA0E20567A4B00E841C1 /* TACommonCell.swift in Sources */,
 				0A9A6122205273B200B7D28D /* TAFavouriteVideoChildCell.swift in Sources */,
 				0AA5CA5E2044237E00768B38 /* HXTagsCell.m in Sources */,
 				0A9A612020526D7800B7D28D /* TAFavouriteVideoCell.swift in Sources */,
 				0A80638F204CF644001E5233 /* TACollectionBlankFooterView.swift in Sources */,
+				0A786053205A194400A38C15 /* TAAboutFriendHeaderView.swift in Sources */,
 				0A4DE2782056CF7B0019FAAA /* TAInputPhoneVC.swift in Sources */,
+				0A786067205A8A5B00A38C15 /* TAChartNotificationCell.swift in Sources */,
 				0AA5CA722044237E00768B38 /* GYZTool.swift in Sources */,
 				0AA5CA702044237E00768B38 /* GYZAlertViewTools.swift in Sources */,
 				0AA5CA732044237E00768B38 /* GYZConst.swift in Sources */,
+				0A78605D205A6D8000A38C15 /* TAFriendsGroupCell.swift in Sources */,
 				0A80638D204CF57F001E5233 /* GYZBaseWhiteNavVC.swift in Sources */,
 				0A7E7052204945A0007A05BD /* TAJingHuaHeaderView.swift in Sources */,
 				0A9A611A2052230C00B7D28D /* TAForgetPwdVC.swift in Sources */,
@@ -1122,7 +1197,9 @@
 				0A9DCA1020567BD900E841C1 /* TASettingCell.swift in Sources */,
 				0A31486D2057AF77009E1986 /* TAFriendsCell.swift in Sources */,
 				0A7E704E204939E8007A05BD /* TABaseModel.swift in Sources */,
+				0A786055205A1BCE00A38C15 /* TAAboutFriendConfirmCell.swift in Sources */,
 				0AA5CA752044249100768B38 /* TAHomeVC.swift in Sources */,
+				0A78606B205A8DCB00A38C15 /* TAChartMessageVC.swift in Sources */,
 				0AA5CA6C2044237E00768B38 /* GYZNetWork.swift in Sources */,
 				0AA5CA6E2044237E00768B38 /* GYZLunarFormatter.swift in Sources */,
 				0AA5C9FC204421B500768B38 /* GYZBaseNavigationVC.swift in Sources */,
@@ -1133,6 +1210,7 @@
 				0A15B5FA2052AFE60023D108 /* TAFavouriteVideoVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
+				0A786051205A17E000A38C15 /* TAAboutFriendVC.swift in Sources */,
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A9DCA182056A0F700E841C1 /* TAPwdConfirmCodeVC.swift in Sources */,
@@ -1170,6 +1248,7 @@
 				0AA5CA632044237E00768B38 /* GYZScanQrcodeVC.swift in Sources */,
 				0AA5CA502044237E00768B38 /* GYZUIButton+Extension.swift in Sources */,
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,
+				0A786065205A886A00A38C15 /* TAChartNotificationVC.swift in Sources */,
 				0AA5CA4F2044237E00768B38 /* ETNavBarTransparent.swift in Sources */,
 				0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */,
 				0A933F592058F4980082540E /* TAFriendHomeDynamicVC.swift in Sources */,
@@ -1193,6 +1272,7 @@
 				0A17A9F8205187C5003F1E30 /* TAShuHuaVC.swift in Sources */,
 				0AA5CA512044237E00768B38 /* GYZUIImage+Extension.swift in Sources */,
 				0A9DCA0A205654B000E841C1 /* TACustomTabBar.swift in Sources */,
+				0A786059205A25B200A38C15 /* TACommonLabCell.swift in Sources */,
 				0AA5CA582044237E00768B38 /* GYZEmptyView.swift in Sources */,
 				0AA5CA5B2044237E00768B38 /* GYZLoadingView.swift in Sources */,
 				0AA5CA4E2044237E00768B38 /* GYZUIView+Extension.swift in Sources */,
@@ -1370,7 +1450,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZ34FX7S74;
+				DEVELOPMENT_TEAM = FPA9N9SK5A;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1391,7 +1471,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = WZ34FX7S74;
+				DEVELOPMENT_TEAM = FPA9N9SK5A;
 				INFOPLIST_FILE = TuAi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

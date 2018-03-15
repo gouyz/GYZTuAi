@@ -18,7 +18,7 @@ class TAFriendHomeDynamicVC: TAScrollPageBaseVC {
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
             
-            make.edges.equalTo(0)
+            make.edges.equalTo(UIEdgeInsets.init(top: 0, left: 0, bottom: kTitleAndStateHeight, right: 0))
         }
     }
 

@@ -30,6 +30,8 @@ class TAFriendsVC: GYZBaseVC {
         }
         
         tableView.tableHeaderView = friendsHeaderView
+        
+        friendsHeaderView.friendsGroupView.addOnClickListener(target: self, action: #selector(clickedFriendGroup))
     }
 
     override func didReceiveMemoryWarning() {
@@ -59,6 +61,12 @@ class TAFriendsVC: GYZBaseVC {
     @objc func clickedUserHeader(sender: UITapGestureRecognizer){
         let homeVC = TAFriendHomeVC()
         self.navigationController?.pushViewController(homeVC, animated: true)
+    }
+    
+    /// 亲友团
+    @objc func clickedFriendGroup(){
+        let groupVC = TAFriendsGroupVC()
+        self.navigationController?.pushViewController(groupVC, animated: true)
     }
 }
 

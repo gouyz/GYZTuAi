@@ -25,8 +25,6 @@ class GYZBaseNavigationVC: UINavigationController ,UIGestureRecognizerDelegate {
 //        }else{
 //            navBar.isTranslucent = false
 //        }
-        ///去除Bar的模糊效果，默认为true
-//        navBar.isTranslucent = false
         // 右滑返回代理
         self.interactivePopGestureRecognizer?.delegate = self
     }

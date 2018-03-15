@@ -15,8 +15,16 @@ class TAScrollPageBaseVC: GYZBaseVC,UIScrollViewDelegate {
     
     var scrollView: UIScrollView?
     
+    var offSetY = kTitleAndStateHeight
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        automaticallyAdjustsScrollViewInsets = false
+        
+        if #available(iOS 11.0, *){
+            offSetY = kTitleAndStateHeight * 2
+        }
         
 //        NotificationCenter.default.addObserver(self, selector: #selector(leaveFromTop), name: NSNotification.Name(rawValue: kLeaveFromTopNotification), object: nil)
     }

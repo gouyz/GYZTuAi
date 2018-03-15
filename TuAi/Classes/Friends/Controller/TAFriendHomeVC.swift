@@ -26,6 +26,8 @@ class TAFriendHomeVC: GYZBaseVC {
     var stateValue : [String] = ["1","2"]
     
     var childScrollView: UIScrollView?
+    
+    var offSetY = kTitleAndStateHeight
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,18 +36,22 @@ class TAFriendHomeVC: GYZBaseVC {
         // 这个是必要的设置
         automaticallyAdjustsScrollViewInsets = false
         
+        if #available(iOS 11.0, *){
+            offSetY = kTitleAndStateHeight * 2
+        }
+        
         // 设置tableView的headView
         tableView.tableHeaderView = headerView
         tableView.showsVerticalScrollIndicator = false
         view.addSubview(tableView)
-//        tableView.snp.makeConstraints { (make) in
-//
-//            if #available(iOS 11.0, *) {
-//                make.edges.equalTo(UIEdgeInsets.init(top: -kTitleAndStateHeight, left: 0, bottom: 0, right: 0))
-//            }else{
-//                make.edges.equalTo(0)
-//            }
-//        }
+        tableView.snp.makeConstraints { (make) in
+
+            if #available(iOS 11.0, *) {
+                make.edges.equalTo(UIEdgeInsets.init(top: -kTitleAndStateHeight, left: 0, bottom: 0, right: 0))
+            }else{
+                make.edges.equalTo(0)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -92,7 +98,7 @@ class TAFriendHomeVC: GYZBaseVC {
     }()
     
     lazy var tableView: CustomGestureTableView = {[unowned self] in
-        let table = CustomGestureTableView(frame: self.view.bounds, style: .plain)
+        let table = CustomGestureTableView(frame: CGRect.zero, style: .plain)
         table.delegate = self
         table.dataSource = self
         return table
@@ -107,7 +113,7 @@ class TAFriendHomeVC: GYZBaseVC {
         let dynamicVC = TAFriendHomeDynamicVC()
         dynamicVC.delegate = self
         
-        let aboutVC = TAFriendHomeDynamicVC()
+        let aboutVC = TAAboutFriendVC()
         aboutVC.delegate = self
         
         return [dynamicVC,aboutVC]
@@ -163,21 +169,13 @@ extension TAFriendHomeVC : UITableViewDelegate,UITableViewDataSource{
     //MARK:UIScrollViewDelegate
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
-        var frame = contentView.frame
-        if childScrollView?.contentOffset.y > 0 {
-            tableView.contentOffset.y = headViewHeight - kTitleAndStateHeight
-            frame.size.height = self.view.bounds.size.height - kTitleHeight - kTitleAndStateHeight
-        }else{
-            frame.size.height = self.view.bounds.size.height - kTitleHeight
+        let contentOffsetY = scrollView.contentOffset.y
+        
+        if childScrollView?.contentOffset.y > 0 || contentOffsetY > headViewHeight - offSetY{
+            tableView.contentOffset = CGPoint.init(x: 0, y: headViewHeight - offSetY)
         }
         
-        if contentView.frame.size.height != frame.size.height {
-            contentView.frame = frame
-            tableView.reloadData()
-        }
-        let contentOffsetY = scrollView.contentOffset.y
         let showNavBarOffsetY = kTitleAndStateHeight - topLayoutGuide.length
-
 
         //navigationBar alpha
         if contentOffsetY > showNavBarOffsetY  {
@@ -187,7 +185,7 @@ extension TAFriendHomeVC : UITableViewDelegate,UITableViewDataSource{
                 navAlpha = 1
             }
             navBarBgAlpha = navAlpha
-            self.navigationItem.title = "朋友"
+            self.navigationItem.title = "朋友主页"
         }else{
             navBarBgAlpha = 0
             self.navigationItem.title = ""
@@ -203,7 +201,7 @@ extension TAFriendHomeVC: ContentViewDelegate {
     
     // 监控开始滚动contentView的时候, 这里将滚动条滚动至顶部(简书没有这个效果,但其他的有---这里拒绝广告)
     func contentViewDidBeginMove() {
-        tableView.setContentOffset(CGPoint(x: 0.0, y: headViewHeight - kTitleAndStateHeight), animated: true)
+        tableView.setContentOffset(CGPoint(x: 0.0, y: headViewHeight - offSetY), animated: true)
     }
 }
 
@@ -213,12 +211,12 @@ extension TAFriendHomeVC: PageViewDelegate {
     func scrollViewIsScrolling(scrollView: UIScrollView) {
         /// 记录便于处理联动
         childScrollView = scrollView
-        
-        if tableView.contentOffset.y < headViewHeight - kTitleAndStateHeight{
+        if tableView.contentOffset.y < headViewHeight - offSetY{
             scrollView.contentOffset = CGPoint.zero
             scrollView.showsVerticalScrollIndicator = false
         }else {
-            tableView.contentOffset.y = headViewHeight - kTitleAndStateHeight //* 2
+            
+            tableView.contentOffset.y = headViewHeight - offSetY
             scrollView.showsVerticalScrollIndicator = true
         }
     }

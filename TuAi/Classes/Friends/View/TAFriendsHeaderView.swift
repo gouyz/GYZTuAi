@@ -24,8 +24,9 @@ class TAFriendsHeaderView: UIView {
     func setupUI(){
         self.addSubview(bgView)
         bgView.addSubview(bgHeaderView)
-        bgView.addSubview(userHeaderView)
-        bgView.addSubview(nameLab)
+        bgHeaderView.addSubview(userHeaderView)
+        bgHeaderView.addSubview(nameLab)
+        bgHeaderView.addSubview(noteLab)
         bgView.addSubview(dongTaiView)
         bgView.addSubview(friendsGroupView)
         bgView.addSubview(ablumView)
@@ -39,25 +40,30 @@ class TAFriendsHeaderView: UIView {
             make.bottom.equalTo(-80)
         }
         userHeaderView.snp.makeConstraints { (make) in
-            make.left.equalTo(20)
-            make.top.equalTo(bgHeaderView.snp.bottom).offset(-20)
+            make.centerX.equalTo(bgHeaderView)
+            make.top.equalTo(kTitleAndStateHeight)
             make.size.equalTo(CGSize.init(width: 60, height: 60))
         }
         nameLab.snp.makeConstraints { (make) in
             make.left.equalTo(kMargin)
             make.top.equalTo(userHeaderView.snp.bottom)
-            make.right.equalTo(userHeaderView)
-            make.height.equalTo(30)
+            make.right.equalTo(-kMargin)
+            make.height.equalTo(20)
+        }
+        noteLab.snp.makeConstraints { (make) in
+            make.left.right.equalTo(nameLab)
+            make.top.equalTo(nameLab.snp.bottom)
+            make.bottom.equalTo(-kMargin)
         }
         dongTaiView.snp.makeConstraints { (make) in
-            make.left.equalTo(userHeaderView.snp.right).offset(30)
+            make.right.equalTo(friendsGroupView.snp.left).offset(-20)
             make.top.equalTo(bgHeaderView.snp.bottom).offset(kMargin)
             make.size.equalTo(CGSize.init(width: 60, height: 60))
         }
         
         friendsGroupView.snp.makeConstraints { (make) in
             make.top.size.equalTo(dongTaiView)
-            make.left.equalTo(dongTaiView.snp.right).offset(kMargin)
+            make.centerX.equalTo(bgView)
         }
         ablumView.snp.makeConstraints { (make) in
             make.top.size.equalTo(dongTaiView)
@@ -91,9 +97,20 @@ class TAFriendsHeaderView: UIView {
     lazy var nameLab: UILabel = {
         let lab = UILabel()
         lab.font = k15Font
-        lab.textColor = kBlackFontColor
+        lab.textColor = kWhiteColor
         lab.textAlignment = .center
         lab.text = "小胖子"
+        
+        return lab
+    }()
+    /// 签名
+    lazy var noteLab: UILabel = {
+        let lab = UILabel()
+        lab.font = k13Font
+        lab.textColor = kWhiteColor
+        lab.textAlignment = .center
+        lab.numberOfLines = 2
+        lab.text = "个性签名"
         
         return lab
     }()

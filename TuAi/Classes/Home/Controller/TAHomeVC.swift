@@ -34,11 +34,18 @@ class TAHomeVC: GYZBaseVC {
         }
         
         setScrollView()
+        
+        navigationBarView.commentImgView.addOnClickListener(target: self, action: #selector(clickedMessage))
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    /// 私信
+    @objc func clickedMessage(){
+        let chartVC = TAChartVC()
+        self.navigationController?.pushViewController(chartVC, animated: true)
     }
     
     /// topView
