@@ -97,10 +97,20 @@ class TAMineVC: GYZBaseVC {
         navigationController?.pushViewController(controller, animated: true)
     }
     
+    /// 头部点击事件
+    @objc func clickedHeaderView(){
+//        goLogin()
+        goEditProfile()
+    }
     /// 登录
-    @objc func goLoginClicked(){
+    func goLogin(){
         let loginVC = GYZLoginVC()
         navigationController?.pushViewController(loginVC, animated: true)
+    }
+    
+    func goEditProfile(){
+        let editProfileVC = TAEditMyProfileVC()
+        self.navigationController?.pushViewController(editProfileVC, animated: true)
     }
 }
 
@@ -131,7 +141,7 @@ extension TAMineVC : UICollectionViewDataSource,UICollectionViewDelegate,UIColle
             if indexPath.section == 0{
                 reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuHeader, for: indexPath) as! TAMineUserHeaderView
                 
-                (reusableview as! TAMineUserHeaderView).bgView.addOnClickListener(target: self, action: #selector(goLoginClicked))
+                (reusableview as! TAMineUserHeaderView).bgView.addOnClickListener(target: self, action: #selector(clickedHeaderView))
             }
         }else if kind == UICollectionElementKindSectionFooter{
             reusableview = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: mineMenuFooter, for: indexPath) as! TACollectionBlankFooterView

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import PYSearch
 
 class TAHomeVC: GYZBaseVC {
 
@@ -36,6 +37,7 @@ class TAHomeVC: GYZBaseVC {
         setScrollView()
         
         navigationBarView.commentImgView.addOnClickListener(target: self, action: #selector(clickedMessage))
+        navigationBarView.searchBtn.addTarget(self, action: #selector(clickedSearch), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +48,23 @@ class TAHomeVC: GYZBaseVC {
     @objc func clickedMessage(){
         let chartVC = TAChartVC()
         self.navigationController?.pushViewController(chartVC, animated: true)
+    }
+    /// 搜索
+    @objc func clickedSearch(){
+        
+        let searchVC: PYSearchViewController = PYSearchViewController.init(hotSearches: ["家长对幼儿教育的误区","幼儿教育与习惯养成","艺术在幼儿教育的重要性","幼儿教育综合知识"], searchBarPlaceholder: "输入您要搜索的内容") { (searchViewController, searchBar, searchText) in
+            
+        }
+        searchVC.hotSearchStyle = .borderTag
+        searchVC.searchHistoryStyle = .borderTag
+        searchVC.searchSuggestionHidden = true
+        
+        let searchNav = GYZBaseNavigationVC(rootViewController:searchVC)
+        searchNav.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: kBlackColor, NSAttributedStringKey.font: k18Font]
+        
+        searchNav.navigationBar.barTintColor = kWhiteColor
+        searchNav.navigationBar.tintColor = kBlackColor
+        self.present(searchNav, animated: true, completion: nil)
     }
     
     /// topView
