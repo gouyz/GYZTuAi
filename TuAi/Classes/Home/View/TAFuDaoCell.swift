@@ -30,9 +30,7 @@ class TAFuDaoCell: UICollectionViewCell {
         
         conmentImgView.snp.makeConstraints { (make) in
             
-            make.top.equalTo(self)
-            make.left.equalTo(5)
-            make.right.equalTo(-5)
+            make.top.left.right.equalTo(self)
             make.height.equalTo(100)
         }
         nameLab.snp.makeConstraints { (make) in

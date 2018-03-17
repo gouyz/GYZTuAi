@@ -32,6 +32,7 @@ class TAFriendsVC: GYZBaseVC {
         tableView.tableHeaderView = friendsHeaderView
         
         friendsHeaderView.friendsGroupView.addOnClickListener(target: self, action: #selector(clickedFriendGroup))
+        friendsHeaderView.ablumView.addOnClickListener(target: self, action: #selector(clickedAblum))
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +56,7 @@ class TAFriendsVC: GYZBaseVC {
         return table
     }()
     
-    lazy var friendsHeaderView: TAFriendsHeaderView = TAFriendsHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 260))
+    lazy var friendsHeaderView: TAFriendsHeaderView = TAFriendsHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 280))
     
     /// 点击头像，进入朋友主页
     @objc func clickedUserHeader(sender: UITapGestureRecognizer){
@@ -67,6 +68,12 @@ class TAFriendsVC: GYZBaseVC {
     @objc func clickedFriendGroup(){
         let groupVC = TAFriendsGroupVC()
         self.navigationController?.pushViewController(groupVC, animated: true)
+    }
+    
+    /// 亲友团
+    @objc func clickedAblum(){
+        let ablumVC = TAAblumVC()
+        self.navigationController?.pushViewController(ablumVC, animated: true)
     }
 }
 

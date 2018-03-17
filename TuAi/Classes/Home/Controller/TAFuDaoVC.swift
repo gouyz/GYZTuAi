@@ -56,12 +56,13 @@ class TAFuDaoVC: GYZBaseVC {
     lazy var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         //设置cell的大小
-        layout.itemSize = CGSize(width: kScreenWidth * 0.5, height: 160)
+        layout.itemSize = CGSize(width: (kScreenWidth - 3 * kMargin) * 0.5, height: 160)
         
         //每个Item之间最小的间距
-        layout.minimumInteritemSpacing = 0
+        layout.minimumInteritemSpacing = kMargin
         //每行之间最小的间距
         layout.minimumLineSpacing = kMargin
+        layout.sectionInset = UIEdgeInsets.init(top: kMargin, left: kMargin, bottom: kMargin, right: kMargin)
         
         let collView = UICollectionView.init(frame: CGRect.zero, collectionViewLayout: layout)
         collView.dataSource = self
