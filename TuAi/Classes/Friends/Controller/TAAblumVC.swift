@@ -9,8 +9,10 @@
 import UIKit
 
 private let ablumCell = "ablumCell"
+private let ablumAddCell = "ablumAddCell"
 
 class TAAblumVC: GYZBaseWhiteNavVC {
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +33,9 @@ class TAAblumVC: GYZBaseWhiteNavVC {
     lazy var collectionView: UICollectionView = {
         
         let layout = UICollectionViewFlowLayout()
+        
         let itemW: CGFloat = (kScreenWidth - 3 * kMargin) * 0.5
-        //设置cell的大小
+        ///设置cell的大小
         layout.itemSize = CGSize(width: itemW, height: itemW + 30)
         
         //每个Item之间最小的间距
@@ -47,6 +50,7 @@ class TAAblumVC: GYZBaseWhiteNavVC {
         collView.backgroundColor = kWhiteColor
         
         collView.register(TAAblumCell.self, forCellWithReuseIdentifier: ablumCell)
+        collView.register(TAAblumAddCell.self, forCellWithReuseIdentifier: ablumAddCell)
         
         return collView
     }()
@@ -62,19 +66,26 @@ extension TAAblumVC : UICollectionViewDataSource,UICollectionViewDelegate{
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ablumCell, for: indexPath) as! TAAblumCell
-        
-        if indexPath.row == 11 {
-            cell.ablumImgView.image = UIImage.init(named: "icon_ablum_add")
-            cell.nameLab.text = "创建相册"
+        if indexPath.row == 11 {// 创建相册
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ablumAddCell, for: indexPath) as! TAAblumAddCell
+            
+            return cell
         }else{
-            cell.ablumImgView.image = UIImage.init(named: "")
-            cell.nameLab.text = "宝宝成长记"
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ablumCell, for: indexPath) as! TAAblumCell
+            
+            return cell
         }
-        return cell
+        
     }
     // MARK: UICollectionViewDelegate的代理方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if indexPath.row == 11 { //创建相册
+            let addVC = TACreateAblumVC()
+            navigationController?.pushViewController(addVC, animated: true)
+        }else{ /// 相册详情
+            let detailVC = TAAblumDetailVC()
+            navigationController?.pushViewController(detailVC, animated: true)
+        }
     }
 }

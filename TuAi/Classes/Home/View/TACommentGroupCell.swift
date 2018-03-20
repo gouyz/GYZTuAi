@@ -11,7 +11,10 @@ import UIKit
 private let commentGroupCell = "commentGroupCell"
 
 class TACommentGroupCell: UITableViewCell {
-
+    
+    /// 代理变量
+    weak var delegate: TACommentGroupCellDelegate?
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?){
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
@@ -73,5 +76,14 @@ extension TACommentGroupCell : UICollectionViewDataSource,UICollectionViewDelega
     // MARK: UICollectionViewDelegate的代理方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        delegate?.didClickedGroupIndex(rowIndex: indexPath.row)
     }
+}
+
+protocol TACommentGroupCellDelegate : NSObjectProtocol {
+    ///操作代理
+    ///
+    /// - Parameters:
+    ///   - rowIndex: 行索引
+    func didClickedGroupIndex(rowIndex: Int)
 }

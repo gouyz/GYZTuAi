@@ -13,7 +13,7 @@ private let homeCommentCell = "homeCommentCell"
 private let homeCommentGroupCell = "homeCommentGroupCell"
 private let homeCommentHeader = "homeCommentHeader"
 
-class TAHomeCommentVC: GYZBaseVC {
+class TAHomeCommentVC: GYZBaseVC,TACommentGroupCellDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +48,15 @@ class TAHomeCommentVC: GYZBaseVC {
         
         return table
     }()
+    
+    
+    ///MARK: TACommentGroupCellDelegate
+    /// 精选小组
+    func didClickedGroupIndex(rowIndex: Int) {
+        
+         let groupVC = TACommentGroupVC()
+        navigationController?.pushViewController(groupVC, animated: true)
+    }
 }
 
 extension TAHomeCommentVC : UITableViewDelegate,UITableViewDataSource{
@@ -67,6 +76,8 @@ extension TAHomeCommentVC : UITableViewDelegate,UITableViewDataSource{
         
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: homeCommentGroupCell) as! TACommentGroupCell
+            
+            cell.delegate = self
             
             cell.selectionStyle = .none
             return cell

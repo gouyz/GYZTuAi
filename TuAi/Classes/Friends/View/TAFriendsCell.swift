@@ -29,15 +29,15 @@ class TAFriendsCell: UITableViewCell {
         bgView.addSubview(nameLab)
         bgView.addSubview(typeLab)
         bgView.addSubview(timeLab)
-        bgView.addSubview(titleLab)
         
         bgView.addSubview(contentBgView)
-        contentBgView.addSubview(contentLab)
+        contentBgView.addSubview(titleLab)
         contentBgView.addSubview(imgViews)
         
         bgView.addSubview(conmentView)
         bgView.addSubview(zanView)
         bgView.addSubview(sharedView)
+        bgView.addSubview(deleteBtn)
         
         bgView.snp.makeConstraints { (make) in
             make.left.right.top.equalTo(contentView)
@@ -63,23 +63,21 @@ class TAFriendsCell: UITableViewCell {
             make.right.equalTo(-kMargin)
             make.top.equalTo(nameLab.snp.bottom)
         }
-        titleLab.snp.makeConstraints { (make) in
-            make.left.right.equalTo(timeLab)
-            make.top.equalTo(timeLab.snp.bottom).offset(5)
-        }
+        
         contentBgView.snp.makeConstraints { (make) in
-            make.left.right.equalTo(titleLab)
-            make.top.equalTo(titleLab.snp.bottom).offset(5)
+            make.left.equalTo(userImgView.snp.right)
+            make.right.equalTo(-kMargin)
+            make.top.equalTo(timeLab.snp.bottom).offset(5)
             make.bottom.equalTo(zanView.snp.top)
         }
-        contentLab.snp.makeConstraints { (make) in
+        titleLab.snp.makeConstraints { (make) in
             make.left.equalTo(kMargin)
             make.right.equalTo(-kMargin)
-            make.top.equalTo(kMargin)
+            make.top.equalTo(5)
         }
         imgViews.snp.makeConstraints { (make) in
-            make.top.equalTo(contentLab.snp.bottom).offset(kMargin)
-            make.left.right.equalTo(contentLab)
+            make.top.equalTo(titleLab.snp.bottom).offset(kMargin)
+            make.left.right.equalTo(titleLab)
             make.height.equalTo(0)
             make.bottom.equalTo(-kMargin)
         }
@@ -97,6 +95,12 @@ class TAFriendsCell: UITableViewCell {
         sharedView.snp.makeConstraints { (make) in
             make.left.equalTo(conmentView.snp.right).offset(5)
             make.width.height.bottom.equalTo(zanView)
+        }
+        
+        deleteBtn.snp.makeConstraints { (make) in
+            make.right.equalTo(-kMargin)
+            make.bottom.height.equalTo(zanView)
+            make.width.equalTo(kTitleHeight)
         }
     }
     
@@ -152,16 +156,6 @@ class TAFriendsCell: UITableViewCell {
         
         return view
     }()
-    /// 内容
-    lazy var contentLab : UILabel = {
-        let lab = UILabel()
-        lab.font = k12Font
-        lab.textColor = kBlackFontColor
-        lab.numberOfLines = 0
-        lab.text = "聊聊什么是让孩子受益终身的行为习惯，聊聊什么是让孩子受益终身的行为习惯，聊聊什么是让孩子受益终身的行为习惯，聊聊什么是让孩子受益终身的行为习惯，聊聊什么是让孩子受益终身的行为习惯"
-        
-        return lab
-    }()
     
     /// 九宫格图片显示
     lazy var imgViews: GYZPhotoView = GYZPhotoView()
@@ -196,5 +190,13 @@ class TAFriendsCell: UITableViewCell {
         return view
         
     }()
-    
+    /// 删除
+    lazy var deleteBtn : UIButton = {
+        let btn = UIButton.init(type: .custom)
+        btn.titleLabel?.font = k14Font
+        btn.setTitleColor(kBlueFontColor, for: .normal)
+        btn.setTitle("删除", for: .normal)
+        
+        return btn
+    }()
 }

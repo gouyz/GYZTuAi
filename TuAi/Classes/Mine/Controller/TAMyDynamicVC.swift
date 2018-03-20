@@ -1,40 +1,26 @@
 //
-//  TAFriendsVC.swift
+//  TAMyDynamicVC.swift
 //  TuAi
-//  朋友
-//  Created by gouyz on 2018/2/26.
+//  我发布的
+//  Created by gouyz on 2018/3/19.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-private let friendsCell = "friendsCell"
+private let myDynamicCell = "myDynamicCell"
 
-class TAFriendsVC: GYZBaseVC {
+class TAMyDynamicVC: GYZBaseWhiteNavVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navBarBgAlpha = 0
-        automaticallyAdjustsScrollViewInsets = false
+        self.navigationItem.title = "我发布的"
         
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            
-            if #available(iOS 11.0, *) {
-                make.edges.equalTo(UIEdgeInsets.init(top: -kTitleAndStateHeight, left: 0, bottom: 0, right: 0))
-            }else{
-                make.edges.equalTo(0)
-            }
-            
+            make.edges.equalTo(0)
         }
-        
-        tableView.tableHeaderView = friendsHeaderView
-        
-        friendsHeaderView.friendsGroupView.addOnClickListener(target: self, action: #selector(clickedFriendGroup))
-        friendsHeaderView.ablumView.addOnClickListener(target: self, action: #selector(clickedAblum))
-        friendsHeaderView.userHeaderView.addOnClickListener(target: self, action: #selector(onClickedMyDynamic))
-        friendsHeaderView.bgHeaderView.isUserInteractionEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -53,38 +39,13 @@ class TAFriendsVC: GYZBaseVC {
         // 设置行高为自动适配
         table.rowHeight = UITableViewAutomaticDimension
         
-        table.register(TAFriendsCell.self, forCellReuseIdentifier: friendsCell)
+        table.register(TAFriendsCell.self, forCellReuseIdentifier: myDynamicCell)
         
         return table
     }()
-    
-    lazy var friendsHeaderView: TAFriendsHeaderView = TAFriendsHeaderView.init(frame: CGRect.init(x: 0, y: 0, width: kScreenWidth, height: 280))
-    
-    /// 点击头像，进入朋友主页
-    @objc func clickedUserHeader(sender: UITapGestureRecognizer){
-        let homeVC = TAFriendHomeVC()
-        self.navigationController?.pushViewController(homeVC, animated: true)
-    }
-    
-    /// 亲友团
-    @objc func clickedFriendGroup(){
-        let groupVC = TAFriendsGroupVC()
-        self.navigationController?.pushViewController(groupVC, animated: true)
-    }
-    
-    /// 亲友团
-    @objc func clickedAblum(){
-        let ablumVC = TAAblumVC()
-        self.navigationController?.pushViewController(ablumVC, animated: true)
-    }
-    /// 我发布的
-    @objc func onClickedMyDynamic(){
-        let myDynamicVC = TAMyDynamicVC()
-        self.navigationController?.pushViewController(myDynamicVC, animated: true)
-    }
 }
 
-extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
+extension TAMyDynamicVC : UITableViewDelegate,UITableViewDataSource{
     /// MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -96,9 +57,8 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: friendsCell) as! TAFriendsCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: myDynamicCell) as! TAFriendsCell
         
-        cell.deleteBtn.isHidden = true
         
         if indexPath.row == 0 {//一张图片
             cell.imgViews.imgWidth = imgWOne
@@ -151,9 +111,6 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
             make.height.equalTo(cell.imgViews.imgHight * rowIndex + kMargin * (rowIndex - 1))
         })
         
-        cell.userImgView.addOnClickListener(target: self, action: #selector(clickedUserHeader(sender:)))
-        cell.userImgView.tag = indexPath.row
-        
         cell.selectionStyle = .none
         return cell
         
@@ -177,27 +134,5 @@ extension TAFriendsVC : UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001
         
-    }
-    
-    //MARK:UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        
-        let contentOffsetY = scrollView.contentOffset.y
-        let showNavBarOffsetY = kTitleAndStateHeight - topLayoutGuide.length
-        
-        
-        //navigationBar alpha
-        if contentOffsetY > showNavBarOffsetY  {
-            
-            var navAlpha = (contentOffsetY - (showNavBarOffsetY)) / 100.0
-            if navAlpha > 1 {
-                navAlpha = 1
-            }
-            navBarBgAlpha = navAlpha
-            self.navigationItem.title = "朋友"
-        }else{
-            navBarBgAlpha = 0
-            self.navigationItem.title = ""
-        }
     }
 }

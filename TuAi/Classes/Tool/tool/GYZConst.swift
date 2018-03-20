@@ -70,11 +70,11 @@ let kMaxSelectCount = 9
 
 /// 动态图片宽度
 /// 一张图片宽度
-let imgWOne: CGFloat = kScreenWidth - 70
+let imgWOne: CGFloat = kScreenWidth - 60
 /// 两张或四张图片宽度
-let imgWTwo: CGFloat = (kScreenWidth - 70 - kMargin)/2
+let imgWTwo: CGFloat = (kScreenWidth - 60 - kMargin)/2
 /// 多张图片宽度
-let imgWMore: CGFloat = (kScreenWidth - 70 - kMargin * 2)/3
+let imgWMore: CGFloat = (kScreenWidth - 60 - kMargin * 2)/3
 
 /// 记录版本号的key
 let LHSBundleShortVersionString = "LHSBundleShortVersionString"
