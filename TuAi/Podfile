@@ -20,6 +20,7 @@ pod 'SKPhotoBrowser' #图片浏览器 https://github.com/suzuki-0000/SKPhotoBrow
 pod 'HcdSpecialField'  #密码输入控件 https://github.com/Jvaeyhcd/HcdSpecialField
 
 pod 'PYSearch'  # 搜索框 https://github.com/ko1o/PYSearch
+pod 'BMPlayer'  # 基于AVPlayer封装的视频播放器  https://github.com/BrikerMan/BMPlayer
 
 #pod 'FSCalendar'  #FSCalendar是一款开源iOS日历控件，支持横向、纵向滑动模式，全屏模式，带有子标题、事件设置等功能 https://github.com/WenchaoD/FSCalendar
 

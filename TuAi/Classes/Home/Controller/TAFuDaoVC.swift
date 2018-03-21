@@ -120,7 +120,6 @@ extension TAFuDaoVC : UICollectionViewDataSource,UICollectionViewDelegate,UIColl
                 
 //                self?.mSelectedTypeIndex = selectedIndex
             }
-            (reusableview as! TAFuDaoHeaderView).tagsView.backgroundColor = kWhiteColor
             (reusableview as! TAFuDaoHeaderView).tagsView.reloadData()
         }
         

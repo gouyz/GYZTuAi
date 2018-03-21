@@ -1,5 +1,12 @@
 PODS:
   - Alamofire (4.5.1)
+  - BMPlayer (1.0.0):
+    - BMPlayer/Full (= 1.0.0)
+  - BMPlayer/Core (1.0.0)
+  - BMPlayer/Full (1.0.0):
+    - BMPlayer/Core
+    - NVActivityIndicatorView (~> 4.0.0)
+    - SnapKit (~> 4.0.0)
   - Cosmos (12.0.1)
   - DKImagePickerController (3.8.1):
     - DKImagePickerController/Camera (= 3.8.1)
@@ -11,6 +18,9 @@ PODS:
   - Kingfisher (4.2.0)
   - MBProgressHUD (1.0.0)
   - MJRefresh (3.1.15)
+  - NVActivityIndicatorView (4.0.0):
+    - NVActivityIndicatorView/Presenter (= 4.0.0)
+  - NVActivityIndicatorView/Presenter (4.0.0)
   - PYSearch (0.8.6)
   - SKPhotoBrowser (4.1.1)
   - SnapKit (4.0.0)
@@ -18,6 +28,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.5.1)
+  - BMPlayer
   - Cosmos (~> 12.0.1)
   - DKImagePickerController
   - HcdSpecialField
@@ -32,6 +43,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  BMPlayer: 06717ac5daf25d403329df24667abe2354dd9b17
   Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
   DKImagePickerController: 51ad6ee2ba05414bb741db54a72cd7f4fb178e34
   HcdSpecialField: 56c5fc7e3d85ca2fb215a81c62b6a26009633876
@@ -39,11 +51,12 @@ SPEC CHECKSUMS:
   Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
   MJRefresh: 9af70f5f9327a2cf87f0fb5929f35fcc2fa638ea
+  NVActivityIndicatorView: 54c9b93b6f25a4f467512680c0c90c09a1095cf2
   PYSearch: df20532006885d1c45c8f18dc41ca172e05e755a
   SKPhotoBrowser: aa02de50f56d80fac23f543e40847af6b360e4b3
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: bfbb4816cd9d0b1c9a0e763aa522027c590bf597
+PODFILE CHECKSUM: 41c8bfaf30bd72c2ed4d25cd22cc556610c02a49
 
 COCOAPODS: 1.2.0

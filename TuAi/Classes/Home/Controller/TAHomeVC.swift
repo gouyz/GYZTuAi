@@ -120,8 +120,8 @@ class TAHomeVC: GYZBaseVC {
 extension TAHomeVC : UINavigationControllerDelegate{
     func navigationController(_ navigationController: UINavigationController, willShow viewController: UIViewController, animated: Bool) {
         
-        /// 首页隐藏导航栏
-        let isShow = viewController.isKind(of: TAHomeVC.self)
+        /// 首页或课程详情隐藏导航栏
+        let isShow = viewController.isKind(of: TAHomeVC.self) || viewController.isKind(of: TAKeChengDetailVC.self)
         self.navigationController?.setNavigationBarHidden(isShow, animated: true)
     }
 }

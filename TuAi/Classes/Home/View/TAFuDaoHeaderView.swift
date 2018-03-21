@@ -67,6 +67,7 @@ class TAFuDaoHeaderView: UICollectionReusableView {
         view.tagAttribute.cornerRadius = kCornerRadius
         /// 显示多行
         view.layout.scrollDirection = .vertical
+        view.backgroundColor = kWhiteColor
         
         return view
     }()

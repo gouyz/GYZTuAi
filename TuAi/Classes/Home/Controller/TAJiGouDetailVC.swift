@@ -106,7 +106,8 @@ extension TAJiGouDetailVC : UICollectionViewDataSource,UICollectionViewDelegate{
     // MARK: UICollectionViewDelegate的代理方法
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        
+        let keChengDetailVC = TAKeChengDetailVC()
+        navigationController?.pushViewController(keChengDetailVC, animated: true)
     }
     
     //MARK:UIScrollViewDelegate

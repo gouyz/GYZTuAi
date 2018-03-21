@@ -69,6 +69,12 @@ class TAHomeJingHuaVC: GYZBaseVC {
         
         return adsView
     }()
+    /// 课程详情
+    @objc func onClickedKeChengDetail(sender: UITapGestureRecognizer){
+        
+        let keChengDetailVC = TAKeChengDetailVC()
+        navigationController?.pushViewController(keChengDetailVC, animated: true)
+    }
 }
 
 extension TAHomeJingHuaVC : UITableViewDelegate,UITableViewDataSource,TAHomeMenuCellDelegate{
@@ -96,6 +102,11 @@ extension TAHomeJingHuaVC : UITableViewDelegate,UITableViewDataSource,TAHomeMenu
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: homeJingHuaCell) as! TAJingHuaCell
             
+            cell.leftItemView.addOnClickListener(target: self, action: #selector(onClickedKeChengDetail(sender:)))
+            cell.rightItemView.addOnClickListener(target: self, action: #selector(onClickedKeChengDetail(sender:)))
+            
+            cell.leftItemView.tag = indexPath.row * 2
+            cell.rightItemView.tag = indexPath.row * 2 + 1
             
             cell.selectionStyle = .none
             return cell

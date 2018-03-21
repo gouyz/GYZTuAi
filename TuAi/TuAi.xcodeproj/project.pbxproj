@@ -40,6 +40,15 @@
 		0A5208552060A37200D69E44 /* TAJiGouDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5208542060A37200D69E44 /* TAJiGouDetailCell.swift */; };
 		0A5208572060A64700D69E44 /* TAJiGouDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5208562060A64700D69E44 /* TAJiGouDetailHeaderView.swift */; };
 		0A5208592060AB7B00D69E44 /* TACustomStoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5208582060AB7B00D69E44 /* TACustomStoreView.swift */; };
+		0A7450C12061E90600A0417D /* TAKeChengDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450C02061E90600A0417D /* TAKeChengDetailVC.swift */; };
+		0A7450C3206208E700A0417D /* TAKeChengDetailContentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450C2206208E700A0417D /* TAKeChengDetailContentVC.swift */; };
+		0A7450C520620A4000A0417D /* TAKeChengDetailBuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450C420620A4000A0417D /* TAKeChengDetailBuyCell.swift */; };
+		0A7450C72062306E00A0417D /* TAKeChengDetailBestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450C62062306E00A0417D /* TAKeChengDetailBestCell.swift */; };
+		0A7450C92062354C00A0417D /* TAKeChengDetailBestHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450C82062354C00A0417D /* TAKeChengDetailBestHeaderView.swift */; };
+		0A7450CB20623C0100A0417D /* TAKeChengDetailDesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450CA20623C0100A0417D /* TAKeChengDetailDesCell.swift */; };
+		0A7450CD2062420700A0417D /* TAKeChengDetailListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450CC2062420700A0417D /* TAKeChengDetailListVC.swift */; };
+		0A7450CF2062468100A0417D /* TAKeChengDetailConmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450CE2062468100A0417D /* TAKeChengDetailConmentVC.swift */; };
+		0A7450D120624A7400A0417D /* TAKeChengDetailConmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7450D020624A7400A0417D /* TAKeChengDetailConmentCell.swift */; };
 		0A7495FC2050BFFF0036C6F7 /* TAStudyProcessingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */; };
 		0A7495FE2050C64E0036C6F7 /* TAStudyRecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */; };
 		0A7496002050C73F0036C6F7 /* TAStudyRecordHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7495FF2050C73F0036C6F7 /* TAStudyRecordHeaderView.swift */; };
@@ -232,6 +241,15 @@
 		0A5208542060A37200D69E44 /* TAJiGouDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJiGouDetailCell.swift; sourceTree = "<group>"; };
 		0A5208562060A64700D69E44 /* TAJiGouDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAJiGouDetailHeaderView.swift; sourceTree = "<group>"; };
 		0A5208582060AB7B00D69E44 /* TACustomStoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACustomStoreView.swift; sourceTree = "<group>"; };
+		0A7450C02061E90600A0417D /* TAKeChengDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailVC.swift; sourceTree = "<group>"; };
+		0A7450C2206208E700A0417D /* TAKeChengDetailContentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailContentVC.swift; sourceTree = "<group>"; };
+		0A7450C420620A4000A0417D /* TAKeChengDetailBuyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailBuyCell.swift; sourceTree = "<group>"; };
+		0A7450C62062306E00A0417D /* TAKeChengDetailBestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailBestCell.swift; sourceTree = "<group>"; };
+		0A7450C82062354C00A0417D /* TAKeChengDetailBestHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailBestHeaderView.swift; sourceTree = "<group>"; };
+		0A7450CA20623C0100A0417D /* TAKeChengDetailDesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailDesCell.swift; sourceTree = "<group>"; };
+		0A7450CC2062420700A0417D /* TAKeChengDetailListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailListVC.swift; sourceTree = "<group>"; };
+		0A7450CE2062468100A0417D /* TAKeChengDetailConmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailConmentVC.swift; sourceTree = "<group>"; };
+		0A7450D020624A7400A0417D /* TAKeChengDetailConmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAKeChengDetailConmentCell.swift; sourceTree = "<group>"; };
 		0A7495FB2050BFFF0036C6F7 /* TAStudyProcessingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyProcessingCell.swift; sourceTree = "<group>"; };
 		0A7495FD2050C64E0036C6F7 /* TAStudyRecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyRecordVC.swift; sourceTree = "<group>"; };
 		0A7495FF2050C73F0036C6F7 /* TAStudyRecordHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAStudyRecordHeaderView.swift; sourceTree = "<group>"; };
@@ -605,6 +623,10 @@
 				0A8E6186205F57C9006DBAFB /* TASearchVideoVC.swift */,
 				0A8E6194205FA4A7006DBAFB /* TACommentGroupVC.swift */,
 				0A52085220609D1A00D69E44 /* TAJiGouDetailVC.swift */,
+				0A7450C02061E90600A0417D /* TAKeChengDetailVC.swift */,
+				0A7450C2206208E700A0417D /* TAKeChengDetailContentVC.swift */,
+				0A7450CC2062420700A0417D /* TAKeChengDetailListVC.swift */,
+				0A7450CE2062468100A0417D /* TAKeChengDetailConmentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -638,6 +660,11 @@
 				0A8E6196205FA867006DBAFB /* TACommentGroupDetailCell.swift */,
 				0A5208542060A37200D69E44 /* TAJiGouDetailCell.swift */,
 				0A5208562060A64700D69E44 /* TAJiGouDetailHeaderView.swift */,
+				0A7450C420620A4000A0417D /* TAKeChengDetailBuyCell.swift */,
+				0A7450C62062306E00A0417D /* TAKeChengDetailBestCell.swift */,
+				0A7450C82062354C00A0417D /* TAKeChengDetailBestHeaderView.swift */,
+				0A7450CA20623C0100A0417D /* TAKeChengDetailDesCell.swift */,
+				0A7450D020624A7400A0417D /* TAKeChengDetailConmentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1219,14 +1246,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A7450CD2062420700A0417D /* TAKeChengDetailListVC.swift in Sources */,
 				0A74960C205116C20036C6F7 /* TACommentGroupCell.swift in Sources */,
 				0A8E6187205F57C9006DBAFB /* TASearchVideoVC.swift in Sources */,
+				0A7450D120624A7400A0417D /* TAKeChengDetailConmentCell.swift in Sources */,
 				0A17AA0020518961003F1E30 /* TAOtherVC.swift in Sources */,
 				0A8E618D205F604B006DBAFB /* TAAblumDetailCell.swift in Sources */,
 				0A5208592060AB7B00D69E44 /* TACustomStoreView.swift in Sources */,
 				0AA5CA672044237E00768B38 /* GYZSheetCell.swift in Sources */,
 				0A17A9FA2051882A003F1E30 /* TATiYuVC.swift in Sources */,
 				0A7495FC2050BFFF0036C6F7 /* TAStudyProcessingCell.swift in Sources */,
+				0A7450CB20623C0100A0417D /* TAKeChengDetailDesCell.swift in Sources */,
 				0A786E48205CAD9000374FC5 /* TAAblumCell.swift in Sources */,
 				0A313181205B64F0007ABD11 /* TAEditMyProfileFooterView.swift in Sources */,
 				0A7E703E2049298A007A05BD /* ZPageControl.swift in Sources */,
@@ -1255,11 +1285,13 @@
 				0A786057205A22B900A38C15 /* TAAboutFriendInfoCell.swift in Sources */,
 				0AA5CA532044237E00768B38 /* GYZString+Extension.swift in Sources */,
 				0A786069205A8DA600A38C15 /* TAChartCell.swift in Sources */,
+				0A7450C12061E90600A0417D /* TAKeChengDetailVC.swift in Sources */,
 				0A9DCA1620569AAB00E841C1 /* TAAccountAndSafeVC.swift in Sources */,
 				0A7E703C2049298A007A05BD /* ZCycleViewCell.swift in Sources */,
 				0A4DE27E2056D3D70019FAAA /* TAInputEmailVC.swift in Sources */,
 				0A786063205A83BE00A38C15 /* TAChartVC.swift in Sources */,
 				0A9DCA0E20567A4B00E841C1 /* TACommonCell.swift in Sources */,
+				0A7450C520620A4000A0417D /* TAKeChengDetailBuyCell.swift in Sources */,
 				0A9A6122205273B200B7D28D /* TAFavouriteVideoChildCell.swift in Sources */,
 				0AA5CA5E2044237E00768B38 /* HXTagsCell.m in Sources */,
 				0A9A612020526D7800B7D28D /* TAFavouriteVideoCell.swift in Sources */,
@@ -1297,6 +1329,7 @@
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
 				0A786051205A17E000A38C15 /* TAAboutFriendVC.swift in Sources */,
+				0A7450C92062354C00A0417D /* TAKeChengDetailBestHeaderView.swift in Sources */,
 				0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */,
 				0AA5CA7D2044258B00768B38 /* TAOthersVC.swift in Sources */,
 				0A9DCA182056A0F700E841C1 /* TAPwdConfirmCodeVC.swift in Sources */,
@@ -1347,6 +1380,7 @@
 				0AA5CA4F2044237E00768B38 /* ETNavBarTransparent.swift in Sources */,
 				0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */,
 				0A933F592058F4980082540E /* TAFriendHomeDynamicVC.swift in Sources */,
+				0A7450CF2062468100A0417D /* TAKeChengDetailConmentVC.swift in Sources */,
 				0A52085320609D1A00D69E44 /* TAJiGouDetailVC.swift in Sources */,
 				0A7E705020493A3C007A05BD /* TAHomeFuncModel.swift in Sources */,
 				0AA5CA77204424E800768B38 /* TAMineVC.swift in Sources */,
@@ -1356,6 +1390,8 @@
 				0AA5CA792044251C00768B38 /* TAFavoriteVC.swift in Sources */,
 				0AA5CA622044237E00768B38 /* IQActionSheetViewController.m in Sources */,
 				0A7E704C204936E4007A05BD /* TAFuncModelView.swift in Sources */,
+				0A7450C72062306E00A0417D /* TAKeChengDetailBestCell.swift in Sources */,
+				0A7450C3206208E700A0417D /* TAKeChengDetailContentVC.swift in Sources */,
 				0AA5CA6A2044237E00768B38 /* ScrollSegmentView.swift in Sources */,
 				0A786E46205CAB5400374FC5 /* TAAblumVC.swift in Sources */,
 				0A4DE2762056CBF50019FAAA /* TAModifyPhoneVC.swift in Sources */,
