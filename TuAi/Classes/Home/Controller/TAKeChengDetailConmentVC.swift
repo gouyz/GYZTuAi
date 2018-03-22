@@ -17,29 +17,18 @@ class TAKeChengDetailConmentVC: GYZBaseVC {
         super.viewDidLoad()
 
         view.addSubview(bottomView)
-        bottomView.addSubview(conmentField)
-        bottomView.addSubview(sendBtn)
         view.addSubview(tableView)
         
         bottomView.snp.makeConstraints { (make) in
             make.left.right.bottom.equalTo(view)
             make.height.equalTo(kBottomTabbarHeight)
         }
-        sendBtn.snp.makeConstraints { (make) in
-            make.right.bottom.top.equalTo(bottomView)
-            make.width.equalTo(60)
-        }
-        conmentField.snp.makeConstraints { (make) in
-            make.left.equalTo(20)
-            make.top.equalTo(5)
-            make.bottom.equalTo(-5)
-            make.right.equalTo(sendBtn.snp.left).offset(-kMargin)
-        }
         tableView.snp.makeConstraints { (make) in
             make.left.right.equalTo(view)
             make.bottom.equalTo(bottomView.snp.top)
             make.top.equalTo(klineWidth)
         }
+        bottomView.sendBtn.addTarget(self, action: #selector(clickedSendBtn), for: .touchUpInside)
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,36 +52,12 @@ class TAKeChengDetailConmentVC: GYZBaseVC {
         
         return table
     }()
-    
-    lazy var bottomView: UIView = {
-        let bView = UIView()
-        bView.backgroundColor = kBackgroundColor
-        
-        return bView
-    }()
-    lazy var conmentField: UITextField = {
-        let txtField = UITextField()
-        txtField.textColor = kBlackFontColor
-        txtField.font = k15Font
-        txtField.placeholder = "写评论"
-        txtField.backgroundColor = kWhiteColor
-        
-        return txtField
-    }()
-    /// 发送
-    lazy var sendBtn : UIButton = {
-        let btn = UIButton.init(type: .custom)
-        btn.titleLabel?.font = k15Font
-        btn.setTitleColor(kBlackFontColor, for: .normal)
-        btn.setTitle("发送", for: .normal)
-        btn.addTarget(self, action: #selector(clickedSendBtn), for: .touchUpInside)
-        
-        return btn
-    }()
+    // 评论View
+    lazy var bottomView: TABottomSendView = TABottomSendView()
     
     /// 发送
     @objc func clickedSendBtn(){
-        conmentField.resignFirstResponder()
+        bottomView.conmentField.resignFirstResponder()
     }
 }
 extension TAKeChengDetailConmentVC : UITableViewDelegate,UITableViewDataSource{

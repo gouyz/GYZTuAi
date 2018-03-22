@@ -67,7 +67,7 @@
 			<key>image</key>
 			<string>icon_mine_help</string>
 			<key>controller</key>
-			<string></string>
+			<string>TAHelpAndSuggestVC</string>
 		</dict>
 		<dict>
 			<key>title</key>

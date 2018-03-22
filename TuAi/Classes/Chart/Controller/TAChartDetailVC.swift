@@ -1,65 +1,62 @@
 //
-//  TAHomeVideoVC.swift
+//  TAChartDetailVC.swift
 //  TuAi
-//  首页 视频
-//  Created by gouyz on 2018/3/2.
+//  聊天详情
+//  Created by gouyz on 2018/3/22.
 //  Copyright © 2018年 gyz. All rights reserved.
 //
 
 import UIKit
 
-
-private let homeVideoCell = "homeVideoCell"
-
-class TAHomeVideoVC: GYZBaseVC {
+class TAChartDetailVC: GYZBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.navigationItem.title = "小胖子"
         view.addSubview(tableView)
         tableView.snp.makeConstraints { (make) in
-            make.edges.equalTo(UIEdgeInsetsMake(0, 0, kTabBarHeight, 0))
+            make.edges.equalTo(0)
+//            if #available(iOS 11.0, *) {
+//                make.edges.equalTo(0)
+//
+//            }else{
+//                make.edges.equalTo(UIEdgeInsets.init(top: kTitleAndStateHeight, left: 0, bottom: 0, right: 0))
+//            }
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     /// 懒加载UITableView
     lazy var tableView : UITableView = {
         let table = UITableView(frame: CGRect.zero, style: .grouped)
         table.dataSource = self
         table.delegate = self
-        table.separatorStyle = .none
+        table.separatorColor = kGrayLineColor
         
-        // 设置大概高度
-        table.estimatedRowHeight = 180
-        // 设置行高为自动适配
-        table.rowHeight = UITableViewAutomaticDimension
+//        table.register(TAChartCell.self, forCellReuseIdentifier: chartMessageCell)
         
-        table.register(TAHomeVideoCell.self, forCellReuseIdentifier: homeVideoCell)
         
         return table
     }()
-    
 }
 
-extension TAHomeVideoVC : UITableViewDelegate,UITableViewDataSource{
+extension TAChartDetailVC : UITableViewDelegate,UITableViewDataSource{
     /// MARK: - UITableViewDataSource
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
-        return 6
+        
+        return 12
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: homeVideoCell) as! TAHomeVideoCell
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "1") as! TAChartCell
         
         cell.selectionStyle = .none
         return cell
@@ -74,13 +71,13 @@ extension TAHomeVideoVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let detailVC = TAHomeVideoDetailVC()
-        navigationController?.pushViewController(detailVC, animated: true)
     }
     ///MARK : UITableViewDelegate
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
+    }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 0.00001
+        return kMargin
     }
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         return 0.00001

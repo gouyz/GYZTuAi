@@ -33,9 +33,10 @@ class TAKeChengDetailBestHeaderView: UITableViewHeaderFooterView {
             make.size.equalTo(CGSize.init(width: 30, height: 30))
         }
         titleImgView.snp.makeConstraints { (make) in
-            make.left.equalTo(tagImgView.snp.right).offset(3)
-            make.centerY.height.equalTo(tagImgView)
+            make.left.equalTo(tagImgView.snp.right)
+            make.centerY.equalTo(tagImgView)
             make.width.equalTo(80)
+            make.height.equalTo(24)
         }
         titleLab.snp.makeConstraints { (make) in
             make.edges.equalTo(0)
@@ -45,13 +46,13 @@ class TAKeChengDetailBestHeaderView: UITableViewHeaderFooterView {
     /// 图标
     var tagImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_kecheng_detail_tag"))
     /// 标题背景
-    var titleImgView: UIImageView = UIImageView.init(image: UIImage.init(named: ""))
+    var titleImgView: UIImageView = UIImageView.init(image: UIImage.init(named: "icon_kecheng_circle"))
     
     // 标题
     lazy var titleLab : UILabel = {
         let lab = UILabel()
-        lab.textColor = kBlackFontColor
-        lab.font = k15Font
+        lab.textColor = kWhiteColor
+        lab.font = k14Font
         lab.textAlignment = .center
         lab.text = "课程亮点"
         
