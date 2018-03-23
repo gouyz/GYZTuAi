@@ -71,6 +71,8 @@ extension TAChartMessageVC : UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        let detailVC = TAChartDetailVC()
+        navigationController?.pushViewController(detailVC, animated: true)
     }
     ///MARK : UITableViewDelegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

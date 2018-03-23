@@ -61,6 +61,8 @@
 		0A74960E20511D060036C6F7 /* TACommentGroupChildCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */; };
 		0A749610205129A80036C6F7 /* TAFuDaoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */; };
 		0A74961220512DD20036C6F7 /* TAFuDaoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */; };
+		0A74EAC42064A8F000CFF417 /* TAChartDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74EAC32064A8F000CFF417 /* TAChartDetailCell.swift */; };
+		0A74EAC62064AAFA00CFF417 /* TAChartDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A74EAC52064AAFA00CFF417 /* TAChartDetailModel.swift */; };
 		0A7772D4204FC66C00FC0065 /* TAMyBusinessVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */; };
 		0A7772D6204FC79000FC0065 /* GYZLabAndFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */; };
 		0A786051205A17E000A38C15 /* TAAboutFriendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A786050205A17E000A38C15 /* TAAboutFriendVC.swift */; };
@@ -268,6 +270,8 @@
 		0A74960D20511D060036C6F7 /* TACommentGroupChildCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentGroupChildCell.swift; sourceTree = "<group>"; };
 		0A74960F205129A80036C6F7 /* TAFuDaoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoVC.swift; sourceTree = "<group>"; };
 		0A74961120512DD20036C6F7 /* TAFuDaoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFuDaoCell.swift; sourceTree = "<group>"; };
+		0A74EAC32064A8F000CFF417 /* TAChartDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartDetailCell.swift; sourceTree = "<group>"; };
+		0A74EAC52064AAFA00CFF417 /* TAChartDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAChartDetailModel.swift; sourceTree = "<group>"; };
 		0A7772D3204FC66C00FC0065 /* TAMyBusinessVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyBusinessVC.swift; sourceTree = "<group>"; };
 		0A7772D5204FC79000FC0065 /* GYZLabAndFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZLabAndFieldView.swift; sourceTree = "<group>"; };
 		0A786050205A17E000A38C15 /* TAAboutFriendVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAAboutFriendVC.swift; sourceTree = "<group>"; };
@@ -467,6 +471,7 @@
 		0A786060205A82B100A38C15 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0A74EAC52064AAFA00CFF417 /* TAChartDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -476,6 +481,7 @@
 			children = (
 				0A786066205A8A5B00A38C15 /* TAChartNotificationCell.swift */,
 				0A786068205A8DA600A38C15 /* TAChartCell.swift */,
+				0A74EAC32064A8F000CFF417 /* TAChartDetailCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1317,6 +1323,7 @@
 				0A80638F204CF644001E5233 /* TACollectionBlankFooterView.swift in Sources */,
 				0A786053205A194400A38C15 /* TAAboutFriendHeaderView.swift in Sources */,
 				0A4DE2782056CF7B0019FAAA /* TAInputPhoneVC.swift in Sources */,
+				0A74EAC62064AAFA00CFF417 /* TAChartDetailModel.swift in Sources */,
 				0A786067205A8A5B00A38C15 /* TAChartNotificationCell.swift in Sources */,
 				0AA5CA722044237E00768B38 /* GYZTool.swift in Sources */,
 				0AA5CA702044237E00768B38 /* GYZAlertViewTools.swift in Sources */,
@@ -1400,6 +1407,7 @@
 				0AA5CA632044237E00768B38 /* GYZScanQrcodeVC.swift in Sources */,
 				0AA5CA502044237E00768B38 /* GYZUIButton+Extension.swift in Sources */,
 				0AA5CA612044237E00768B38 /* IQActionSheetPickerView.m in Sources */,
+				0A74EAC42064A8F000CFF417 /* TAChartDetailCell.swift in Sources */,
 				0A786065205A886A00A38C15 /* TAChartNotificationVC.swift in Sources */,
 				0AA5CA4F2044237E00768B38 /* ETNavBarTransparent.swift in Sources */,
 				0A9DCA122056934B00E841C1 /* TASettingAutoPlayVC.swift in Sources */,
