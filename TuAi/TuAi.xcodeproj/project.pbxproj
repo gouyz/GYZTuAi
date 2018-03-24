@@ -122,6 +122,7 @@
 		0A8E6193205F9CF0006DBAFB /* TAMyDynamicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E6192205F9CF0006DBAFB /* TAMyDynamicVC.swift */; };
 		0A8E6195205FA4A7006DBAFB /* TACommentGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E6194205FA4A7006DBAFB /* TACommentGroupVC.swift */; };
 		0A8E6197205FA867006DBAFB /* TACommentGroupDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E6196205FA867006DBAFB /* TACommentGroupDetailCell.swift */; };
+		0A90FCCF2065DD660024FDA2 /* GYZCacheTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A90FCCE2065DD660024FDA2 /* GYZCacheTool.swift */; };
 		0A933F532058BD820082540E /* TAFriendHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F522058BD820082540E /* TAFriendHomeVC.swift */; };
 		0A933F552058CB8F0082540E /* TAFriendsHomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */; };
 		0A933F572058F3CA0082540E /* TAScrollPageBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */; };
@@ -331,6 +332,7 @@
 		0A8E6192205F9CF0006DBAFB /* TAMyDynamicVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAMyDynamicVC.swift; sourceTree = "<group>"; };
 		0A8E6194205FA4A7006DBAFB /* TACommentGroupVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentGroupVC.swift; sourceTree = "<group>"; };
 		0A8E6196205FA867006DBAFB /* TACommentGroupDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TACommentGroupDetailCell.swift; sourceTree = "<group>"; };
+		0A90FCCE2065DD660024FDA2 /* GYZCacheTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GYZCacheTool.swift; sourceTree = "<group>"; };
 		0A933F522058BD820082540E /* TAFriendHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendHomeVC.swift; sourceTree = "<group>"; };
 		0A933F542058CB8F0082540E /* TAFriendsHomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAFriendsHomeHeaderView.swift; sourceTree = "<group>"; };
 		0A933F562058F3CA0082540E /* TAScrollPageBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAScrollPageBaseVC.swift; sourceTree = "<group>"; };
@@ -1060,6 +1062,7 @@
 				0AA5CA4B2044237E00768B38 /* GYZThrowLineTool.swift */,
 				0AA5CA4C2044237E00768B38 /* GYZTool.swift */,
 				0AA5CA4D2044237E00768B38 /* GYZConst.swift */,
+				0A90FCCE2065DD660024FDA2 /* GYZCacheTool.swift */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -1355,6 +1358,7 @@
 				0A15B5FA2052AFE60023D108 /* TAFavouriteVideoVC.swift in Sources */,
 				0AA5CA692044237E00768B38 /* ScrollPageView.swift in Sources */,
 				0AA5CA662044237E00768B38 /* GYZActionSheet.swift in Sources */,
+				0A90FCCF2065DD660024FDA2 /* GYZCacheTool.swift in Sources */,
 				0A79A05D20634E14008F5656 /* TAHomeVideoDetailVC.swift in Sources */,
 				0A786051205A17E000A38C15 /* TAAboutFriendVC.swift in Sources */,
 				0A7450C92062354C00A0417D /* TAKeChengDetailBestHeaderView.swift in Sources */,
