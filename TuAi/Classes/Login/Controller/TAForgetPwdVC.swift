@@ -169,19 +169,19 @@ class TAForgetPwdVC: GYZBaseWhiteNavVC {
             return
         }
         
-//        if pwdInputView.textFiled.text!.isEmpty {
-//            MBProgressHUD.showAutoDismissHUD(message: "请输入密码")
-//            return
-//        }else if (pwdInputView.textFiled.text?.count < 6 || pwdInputView.textFiled.text?.count > 15){
-//            MBProgressHUD.showAutoDismissHUD(message: "请输入6-15位密码")
-//            return
-//        }
+        if pwdInputView.textFiled.text!.isEmpty {
+            MBProgressHUD.showAutoDismissHUD(message: "请输入密码")
+            return
+        }else if (pwdInputView.textFiled.text?.count < 6 || pwdInputView.textFiled.text?.count > 20){
+            MBProgressHUD.showAutoDismissHUD(message: "请输入6-20位密码")
+            return
+        }
         
-//        if isRegister {
-//            requestRegister()
-//        }else{
-//            requestUpdatePwd()
-//        }
+        if isRegister {
+            requestRegister()
+        }else{
+            requestUpdatePwd()
+        }
         
     }
     /// 判断手机号是否有效
@@ -211,27 +211,57 @@ class TAForgetPwdVC: GYZBaseWhiteNavVC {
     }
     
     /// 找回密码
-//    func requestUpdatePwd(){
-//
-//        weak var weakSelf = self
-//        createHUD(message: "加载中...")
-//
-//        GYZNetWork.requestNetwork("app/editPassword.do", parameters: ["phone":phoneInputView.textFiled.text!,"password": pwdInputView.textFiled.text!,"code":codeInputView.textFiled.text!],  success: { (response) in
-//
-//            weakSelf?.hud?.hide(animated: true)
-//            GYZLog(response)
-//            if response["code"].intValue == kQuestSuccessTag{//请求成功
-//
-//                _ = weakSelf?.navigationController?.popViewController(animated: true)
-//            }else{
-//                MBProgressHUD.showAutoDismissHUD(message: response["message"].stringValue)
-//            }
-//
-//        }, failture: { (error) in
-//            weakSelf?.hud?.hide(animated: true)
-//            GYZLog(error)
-//        })
-//    }
+    func requestUpdatePwd(){
+
+        weak var weakSelf = self
+        createHUD(message: "加载中...")
+
+        GYZNetWork.requestNetwork("app/editPassword.do", parameters: ["phone":phoneInputView.textFiled.text!,"password": pwdInputView.textFiled.text!,"code":codeInputView.textFiled.text!],  success: { (response) in
+
+            weakSelf?.hud?.hide(animated: true)
+            GYZLog(response)
+            if response["code"].intValue == kQuestSuccessTag{//请求成功
+
+                _ = weakSelf?.navigationController?.popViewController(animated: true)
+            }else{
+                MBProgressHUD.showAutoDismissHUD(message: response["message"].stringValue)
+            }
+
+        }, failture: { (error) in
+            weakSelf?.hud?.hide(animated: true)
+            GYZLog(error)
+        })
+    }
+    
+    /// 注册
+    func requestRegister(){
+        
+        weak var weakSelf = self
+        createHUD(message: "注册中...")
+        
+        GYZNetWork.requestNetwork("User/register", parameters: ["member_name":phoneInputView.textFiled.text!,"member_passwd": pwdInputView.textFiled.text!,"code":codeStr,"submit":"==get"],  success: { (response) in
+            
+            weakSelf?.hud?.hide(animated: true)
+            //            GYZLog(response)
+            if response["status"].intValue == kQuestSuccessTag{//请求成功
+                
+                let data = response["data"]
+                
+                userDefaults.set(true, forKey: kIsLoginTagKey)//是否登录标识
+                userDefaults.set(data["member_id"].stringValue, forKey: "userId")//用户ID
+                userDefaults.set(data["member_name"].stringValue, forKey: "phone")//用户电话
+//                userDefaults.set(data["username"].stringValue, forKey: "username")//用户名称
+//                userDefaults.set(info["head_img"].url, forKey: "headImg")//用户logo
+                _ = weakSelf?.navigationController?.popViewController(animated: true)
+            }else{
+                MBProgressHUD.showAutoDismissHUD(message: response["result"]["msg"].stringValue)
+            }
+            
+        }, failture: { (error) in
+            weakSelf?.hud?.hide(animated: true)
+            GYZLog(error)
+        })
+    }
     
     /// 隐藏键盘
     func hiddenKeyBoard(){

@@ -13,10 +13,9 @@ import SwiftyJSON
 
 /// 网络请求基地址
 #if DEBUG
-  let BaseRequestURL = "http://www.xueub.cn/LRS_PMS/"
-//    let BaseRequestURL = "http://www.jhfdc.org/LRS_PMS/"
+  let BaseRequestURL = "http://yl.0519app.com/android/api/"
 #else
-  let BaseRequestURL = "http://www.jhfdc.org/LRS_PMS/"
+  let BaseRequestURL = "http://yl.0519app.com/android/api/"
 #endif
 
 class GYZNetWork: NSObject {
