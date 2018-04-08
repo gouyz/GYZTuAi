@@ -20,7 +20,7 @@ extension String {
             return false
         }
         // 判断是否是手机号
-        let patternString = "^1[3|4|5|7|8][0-9]\\d{8}$"
+        let patternString = "^1[3-9][0-9]\\d{8}$"
         return comparePredicate( patternString: patternString)
     }
     
