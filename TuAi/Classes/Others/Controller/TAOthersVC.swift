@@ -61,6 +61,7 @@ class TAOthersVC: GYZBaseVC {
         sendView.imgSize = CGSize.init(width: 60, height: 60)
         sendView.menuImg.image = UIImage.init(named: "icon_send_tuwen")
         sendView.menuTitle.text = "发图文"
+        sendView.addOnClickListener(target: self, action: #selector(onClickedSendTuWen))
         
         return sendView
     }()
@@ -70,6 +71,7 @@ class TAOthersVC: GYZBaseVC {
         sendView.imgSize = CGSize.init(width: 60, height: 60)
         sendView.menuImg.image = UIImage.init(named: "icon_send_video")
         sendView.menuTitle.text = "发视频"
+        sendView.addOnClickListener(target: self, action: #selector(onClickedSendVideo))
         
         return sendView
     }()
@@ -87,6 +89,17 @@ class TAOthersVC: GYZBaseVC {
     //// 取消事件
     @objc func clickedCancle(){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    //// 发图文
+    @objc func onClickedSendTuWen(){
+        let sendVC = TASendTuWenVC()
+        navigationController?.pushViewController(sendVC, animated: true)
+    }
+    //// 发视频
+    @objc func onClickedSendVideo(){
+        let videoVC = TASendVideoVC()
+        navigationController?.pushViewController(videoVC, animated: true)
     }
 }
 

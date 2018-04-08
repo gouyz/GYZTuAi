@@ -57,7 +57,7 @@ class TAKeChengDetailBuyCell: UITableViewCell {
         priceLab.attributedText = price
     }
     /// 标签 类型
-    var tagsView: HXTagsView = {
+    lazy var tagsView: HXTagsView = {
         
         let view = HXTagsView()
         view.tagAttribute.borderColor = kGrayLineColor
