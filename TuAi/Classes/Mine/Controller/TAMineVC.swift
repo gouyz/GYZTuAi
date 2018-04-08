@@ -99,8 +99,8 @@ class TAMineVC: GYZBaseVC {
     
     /// 头部点击事件
     @objc func clickedHeaderView(){
-//        goLogin()
-        goEditProfile()
+        goLogin()
+//        goEditProfile()
     }
     /// 登录
     func goLogin(){
