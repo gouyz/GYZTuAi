@@ -56,13 +56,27 @@ class TASelectedGroupVC: GYZBaseWhiteNavVC {
     lazy var searchBar : UISearchBar = {
         let search = UISearchBar()
         
-//        search.backgroundImage = UIImage.init(named: "icon_search_clearbg")
         search.placeholder = "请输入您要加入的小组"
         search.delegate = self
+        //设置背景图是为了去掉上下黑线
+        search.backgroundImage = UIImage.init()
+        search.backgroundColor = kWhiteColor
         //显示输入光标
-        search.tintColor = kBlackFontColor
-        //弹出键盘
-//        search.becomeFirstResponder()
+        //        search.tintColor = kBlackFontColor
+        search.isTranslucent = true
+        search.layer.borderWidth = 0.5
+        search.layer.borderColor = kBackgroundColor.cgColor
+        
+        for subView in search.subviews  {
+            
+            for subsubView in subView.subviews  {
+                
+                if let textField = subsubView as? UITextField {
+                    textField.layer.borderWidth = 0
+                    textField.backgroundColor = kBackgroundColor
+                }
+            }
+        }
         
         return search
     }()
