@@ -23,6 +23,7 @@ class TAHomeVideoDetailVC: GYZBaseWhiteNavVC {
         super.viewDidLoad()
 
         self.navigationItem.title = "视频详情"
+        resetPlayerManager()
         
         view.addSubview(player)
         view.addSubview(userView)
@@ -76,7 +77,8 @@ class TAHomeVideoDetailVC: GYZBaseWhiteNavVC {
         }
         
         player.delegate = self
-        let asset = BMPlayerResource(url: URL(string: "http://baobab.wdjcdn.com/14525705791193.mp4")!, name: "风格互换：原来你我相爱")
+//        let asset = BMPlayerResource(url: URL(string: "http://baobab.wdjcdn.com/14525705791193.mp4")!, name: "风格互换：原来你我相爱")
+        let asset = BMPlayerResource.init(url: URL(string: "http://yichong.0519app.com/uploads/8-10-31996/980c1e2037946.mp4")!, name: "风格互换：原来你我相爱", cover: URL(string: "http://yichong.0519app.com/uploads/8-10-31234/9785e2f91b982.png")!, subtitle: nil)
         player.setVideo(resource: asset)
     }
 
@@ -170,6 +172,7 @@ class TAHomeVideoDetailVC: GYZBaseWhiteNavVC {
         // 加载效果，更多请见：https://github.com/ninjaprox/NVActivityIndicatorView
         BMPlayerConf.loaderType  = NVActivityIndicatorType.lineSpinFadeLoader
     }
+    
     /// 关注
     @objc func onClickedAddBtn(){
         

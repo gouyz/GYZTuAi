@@ -115,7 +115,7 @@ class TAKeChengDetailVC: GYZBaseWhiteNavVC {
         // 是否打印日志，默认false
         BMPlayerConf.allowLog = false
         // 是否自动播放，默认true
-        BMPlayerConf.shouldAutoPlay = true
+        BMPlayerConf.shouldAutoPlay = false
         // 主体颜色，默认白色
         BMPlayerConf.tintColor = kWhiteColor
         // 顶部返回和标题显示选项，默认.Always，可选.HorizantalOnly、.None
